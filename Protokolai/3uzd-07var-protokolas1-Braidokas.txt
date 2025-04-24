@@ -1,0 +1,42 @@
+﻿====================================================================================================
+|3 užduotis, 7 variantas. R. Braidokas, Programų sistemų 1 kursas, 2 grupė, 1 pogrupis             |
+|--------------------------------------------------------------------------------------------------|
+|Sąlyga:                                                                                           |
+|    Simuliuoti nesavitarnos parduotuvės veiklą.                                                   |
+|    Patyrinėti abu procesus, tiek klientų pasitenkinimo požiūriu (laukimo laiku),                 |
+|    tiek ekonominiu požiūriu (kasų užimtumu).                                                     |
+|--------------------------------------------------------------------------------------------------|
+|Procesas1:                                                                                        |
+|    pardavėja pilnai aptarnauja klientą: paduoda prekes, išmuša čekį, paima pinigus.              |
+|--------------------------------------------------------------------------------------------------|
+|Procesas2:                                                                                        |
+|    pardavėja surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu             |
+|    klientas eina sumokėti prie kasininkės, kuri išmuša čekį ir paima pinigus,                    |
+|    su šiuo čekiu pirkėjas grįžta prie jį aptarnavusios pardavėjos ir, šiai baigus                |
+|    aptarnauti eilinį pirkėją, be eilės gauna prekes.                                             |
+====================================================================================================
+
+
+
+====================================================================================================
+|PIRMA DALIS. Pradiniai duomenys                                                                   |
+|==================================================================================================|
+|Bendri:                                                                                           |
+|    1) Simuliacijos trukmė: 9 minutės                                                             |
+|    2) Tikimybė ateiti pirkėjui: 10%                                                              |
+|--------------------------------------------------------------------------------------------------|
+|Procesas 1:                                                                                       |
+|    1) Pardavėjų skaičius: 1                                                                      |
+|    2) Aptarnavimo trukmė: 3 minutės                                                              |
+|--------------------------------------------------------------------------------------------------|
+|Procesas 2:                                                                                       |
+|    1) Pardavėjų skaičius: 5                                                                      |
+|    2) Kasininkių skaičius: 6                                                                     |
+|    3) Trukmė surašyti prekes: 9 minutės                                                          |
+|    4) Trukmė susimokėti už prekes: 1 minutė                                                      |
+|    5) Trukmė pasiimti prekes: 1 minutė                                                           |
+====================================================================================================
+
+
+
+ANTRA DALIS. Vykdymas
