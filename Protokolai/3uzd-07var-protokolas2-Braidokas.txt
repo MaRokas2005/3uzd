@@ -26,12 +26,12 @@
 |    2) Tikimybė ateiti pirkėjui: 100%                                                             |
 |--------------------------------------------------------------------------------------------------|
 |Procesas 1:                                                                                       |
-|    1) Pardavėjų skaičius: 5                                                                      |
+|    1) Pardavėjų skaičius: 3                                                                      |
 |    2) Aptarnavimo trukmė: 3 minutės                                                              |
 |--------------------------------------------------------------------------------------------------|
 |Procesas 2:                                                                                       |
-|    1) Pardavėjų skaičius: 3                                                                      |
-|    2) Kasininkių skaičius: 2                                                                     |
+|    1) Pardavėjų skaičius: 2                                                                      |
+|    2) Kasininkių skaičius: 1                                                                     |
 |    3) Trukmė surašyti prekes: 1 minutė                                                           |
 |    4) Trukmė susimokėti už prekes: 1 minutė                                                      |
 |    5) Trukmė pasiimti prekes: 1 minutė                                                           |
@@ -50,8 +50,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 laisvas                                                                      |
 |        Pardavėjas_2 laisvas                                                                      |
 |        Pardavėjas_3 laisvas                                                                      |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 1 minutė                                                                                      |
 |Veiksmai_1                                                                                        |
@@ -63,8 +61,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 2 minutės                                |
 |        Pardavėjas_2 laisvas                                                                      |
 |        Pardavėjas_3 laisvas                                                                      |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 2 minutės                                                                                     |
 |Veiksmai_2                                                                                        |
@@ -76,8 +72,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                 |
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 2 minutės                                |
 |        Pardavėjas_3 laisvas                                                                      |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 3 minutės                                                                                     |
 |Veiksmai_3                                                                                        |
@@ -89,8 +83,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 2 minutės                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 4 minutės                                                                                     |
 |Veiksmai_4                                                                                        |
@@ -103,8 +95,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 2 minutės                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 1 minutė                                 |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 5 minutės                                                                                     |
 |Veiksmai_5                                                                                        |
@@ -117,8 +107,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 1 minutė                                 |
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 2 minutės                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 0 minučių                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 6 minutės                                                                                     |
 |Veiksmai_6                                                                                        |
@@ -131,8 +119,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 2 minutės                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 7 minutės                                                                                     |
 |Veiksmai_7                                                                                        |
@@ -145,8 +131,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 2 minutės                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 1 minutė                                 |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 8 minutės                                                                                     |
 |Veiksmai_8                                                                                        |
@@ -159,8 +143,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                 |
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 2 minutės                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 0 minučių                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 9 minutės                                                                                     |
 |Veiksmai_9                                                                                        |
@@ -173,8 +155,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 2 minutės                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 10 minučių                                                                                    |
 |Veiksmai_10                                                                                       |
@@ -187,8 +167,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 1 minutė                                 |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 11 minučių                                                                                    |
 |Veiksmai_11                                                                                       |
@@ -201,8 +179,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 0 minučių                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 12 minučių                                                                                    |
 |Veiksmai_12                                                                                       |
@@ -215,8 +191,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 13 minučių                                                                                    |
 |Veiksmai_13                                                                                       |
@@ -229,8 +203,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 14 minučių                                                                                    |
 |Veiksmai_14                                                                                       |
@@ -243,8 +215,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 15 minučių                                                                                    |
 |Veiksmai_15                                                                                       |
@@ -257,8 +227,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 16 minučių                                                                                    |
 |Veiksmai_16                                                                                       |
@@ -271,8 +239,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 17 minučių                                                                                    |
 |Veiksmai_17                                                                                       |
@@ -285,8 +251,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 18 minučių                                                                                    |
 |Veiksmai_18                                                                                       |
@@ -299,8 +263,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 19 minučių                                                                                    |
 |Veiksmai_19                                                                                       |
@@ -313,8 +275,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 20 minučių                                                                                    |
 |Veiksmai_20                                                                                       |
@@ -327,8 +287,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 21 minutė                                                                                     |
 |Veiksmai_21                                                                                       |
@@ -341,8 +299,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 22 minutės                                                                                    |
 |Veiksmai_22                                                                                       |
@@ -355,8 +311,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 23 minutės                                                                                    |
 |Veiksmai_23                                                                                       |
@@ -369,8 +323,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 24 minutės                                                                                    |
 |Veiksmai_24                                                                                       |
@@ -383,8 +335,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 25 minutės                                                                                    |
 |Veiksmai_25                                                                                       |
@@ -397,8 +347,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 26 minutės                                                                                    |
 |Veiksmai_26                                                                                       |
@@ -411,8 +359,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 27 minutės                                                                                    |
 |Veiksmai_27                                                                                       |
@@ -425,8 +371,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 28 minutės                                                                                    |
 |Veiksmai_28                                                                                       |
@@ -439,8 +383,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_28, liko 2 minutės                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 1 minutė                                |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 29 minutės                                                                                    |
 |Veiksmai_29                                                                                       |
@@ -453,8 +395,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_28, liko 1 minutė                                |
 |        Pardavėjas_2 aptarnauja klientą Klientas_29, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 0 minučių                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 |                                                                                                  |
 |T = 30 minučių                                                                                    |
 |Veiksmai_30                                                                                       |
@@ -467,8 +407,6 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_1 aptarnauja klientą Klientas_28, liko 0 minučių                               |
 |        Pardavėjas_2 aptarnauja klientą Klientas_29, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_30, liko 2 minutės                               |
-|        Pardavėjas_4 laisvas                                                                      |
-|        Pardavėjas_5 laisvas                                                                      |
 ====================================================================================================
 
 
@@ -483,10 +421,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 laisvas                                                                      |
 |        Pardavėjas_2 laisvas                                                                      |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 laisvas                                                                      |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 1 minutė                                                                                      |
 |Veiksmai_1                                                                                        |
@@ -498,10 +434,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 0 minučių                            |
 |        Pardavėjas_2 laisvas                                                                      |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 laisvas                                                                      |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 2 minutės                                                                                     |
 |Veiksmai_2                                                                                        |
@@ -515,10 +449,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_2, liko 0 minučių                            |
 |        Pardavėjas_2 laisvas                                                                      |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 3 minutės                                                                                     |
 |Veiksmai_3                                                                                        |
@@ -534,10 +466,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_1, liko 0 minučių                            |
 |        Pardavėjas_2 surašo prekes klientui Klientas_3, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_2, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 4 minutės                                                                                     |
 |Veiksmai_4                                                                                        |
@@ -554,10 +484,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_2, liko 0 minučių                            |
 |        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_3, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 5 minutės                                                                                     |
 |Veiksmai_5                                                                                        |
@@ -574,10 +502,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 0 minučių                            |
 |        Pardavėjas_2 atneša prekes klientui Klientas_3, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 6 minutės                                                                                     |
 |Veiksmai_6                                                                                        |
@@ -594,10 +520,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_6, liko 0 minučių                            |
 |        Pardavėjas_2 atneša prekes klientui Klientas_4, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_5, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 7 minutės                                                                                     |
 |Veiksmai_7                                                                                        |
@@ -614,10 +538,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_5, liko 0 minučių                            |
 |        Pardavėjas_2 surašo prekes klientui Klientas_7, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_6, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 8 minutės                                                                                     |
 |Veiksmai_8                                                                                        |
@@ -634,10 +556,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_6, liko 0 minučių                            |
 |        Pardavėjas_2 surašo prekes klientui Klientas_8, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 9 minutės                                                                                     |
 |Veiksmai_9                                                                                        |
@@ -654,10 +574,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_9, liko 0 minučių                            |
 |        Pardavėjas_2 atneša prekes klientui Klientas_7, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_8, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 10 minučių                                                                                    |
 |Veiksmai_10                                                                                       |
@@ -674,10 +592,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_8, liko 0 minučių                            |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_9, liko 0 minučių                                |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 11 minučių                                                                                    |
 |Veiksmai_11                                                                                       |
@@ -694,10 +610,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_9, liko 0 minučių                            |
 |        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 12 minučių                                                                                    |
 |Veiksmai_12                                                                                       |
@@ -714,10 +628,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_10, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_12, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_11, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 13 minučių                                                                                    |
 |Veiksmai_13                                                                                       |
@@ -734,10 +646,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_13, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_11, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_12, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 14 minučių                                                                                    |
 |Veiksmai_14                                                                                       |
@@ -754,10 +664,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_14, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_12, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_13, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 15 minučių                                                                                    |
 |Veiksmai_15                                                                                       |
@@ -774,10 +682,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_13, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_15, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_14, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 16 minučių                                                                                    |
 |Veiksmai_16                                                                                       |
@@ -794,10 +700,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_14, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_16, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_15, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 17 minučių                                                                                    |
 |Veiksmai_17                                                                                       |
@@ -814,10 +718,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_17, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_15, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_16, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 18 minučių                                                                                    |
 |Veiksmai_18                                                                                       |
@@ -834,10 +736,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_18, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_16, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_17, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 19 minučių                                                                                    |
 |Veiksmai_19                                                                                       |
@@ -854,10 +754,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_17, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_19, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_18, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 20 minučių                                                                                    |
 |Veiksmai_20                                                                                       |
@@ -874,10 +772,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_18, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_20, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_19, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 21 minutė                                                                                     |
 |Veiksmai_21                                                                                       |
@@ -894,10 +790,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_21, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_19, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_20, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 22 minutės                                                                                    |
 |Veiksmai_22                                                                                       |
@@ -914,10 +808,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_22, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_20, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_21, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 23 minutės                                                                                    |
 |Veiksmai_23                                                                                       |
@@ -934,10 +826,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_21, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_23, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_22, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 24 minutės                                                                                    |
 |Veiksmai_24                                                                                       |
@@ -954,10 +844,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_22, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_24, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_23, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 25 minutės                                                                                    |
 |Veiksmai_25                                                                                       |
@@ -974,10 +862,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_25, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_23, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_24, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 26 minutės                                                                                    |
 |Veiksmai_26                                                                                       |
@@ -994,10 +880,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_26, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_24, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_25, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 27 minutės                                                                                    |
 |Veiksmai_27                                                                                       |
@@ -1014,10 +898,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_25, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_27, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_26, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 28 minutės                                                                                    |
 |Veiksmai_28                                                                                       |
@@ -1034,10 +916,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 atneša prekes klientui Klientas_26, liko 0 minučių                           |
 |        Pardavėjas_2 surašo prekes klientui Klientas_28, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_27, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 29 minutės                                                                                    |
 |Veiksmai_29                                                                                       |
@@ -1054,10 +934,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_29, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_27, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_28, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 |                                                                                                  |
 |T = 30 minučių                                                                                    |
 |Veiksmai_30                                                                                       |
@@ -1074,10 +952,8 @@ ANTRA DALIS. Vykdymas
 |    3) Pardavėjai:                                                                                |
 |        Pardavėjas_1 surašo prekes klientui Klientas_30, liko 0 minučių                           |
 |        Pardavėjas_2 atneša prekes klientui Klientas_28, liko 0 minučių                           |
-|        Pardavėjas_3 laisvas                                                                      |
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_29, liko 0 minučių                               |
-|        Kasininkas_2 laisvas                                                                      |
 ====================================================================================================
 
 
@@ -1096,8 +972,6 @@ ANTRA DALIS. Vykdymas
 |    Pardavėjas_1: 100.00%                                                                         |
 |    Pardavėjas_2: 96.67%                                                                          |
 |    Pardavėjas_3: 93.33%                                                                          |
-|    Pardavėjas_4: 0.00%                                                                           |
-|    Pardavėjas_5: 0.00%                                                                           |
 |--------------------------------------------------------------------------------------------------|
 |Procesas2:                                                                                        |
 |Daugiausia kiek buvo žmonių eilėje yra 1                                                          |
@@ -1109,10 +983,8 @@ ANTRA DALIS. Vykdymas
 |Pardavėjų vidutinis užimtumas:                                                                    |
 |    Pardavėjas_1: 100.00%                                                                         |
 |    Pardavėjas_2: 93.33%                                                                          |
-|    Pardavėjas_3: 0.00%                                                                           |
 |Kasininkų vidutinis užimtumas:                                                                    |
 |    Kasininkas_1: 96.67%                                                                          |
-|    Kasininkas_2: 0.00%                                                                           |
 |--------------------------------------------------------------------------------------------------|
 |Apibendrinimas:                                                                                   |
 |    Aptarnauta vienodai klientų abiejuose procesuose.                                             |

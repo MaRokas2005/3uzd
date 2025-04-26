@@ -48,7 +48,7 @@
             } while (!int.TryParse(Console.ReadLine(), out sumokėtiKasininkeiP2) || !(sumokėtiKasininkeiP2 > 0));
             do
             {
-                Console.Write("Trukmė gauti prekes iš pardavėjos (> 0): ");
+                Console.Write("Trukmė gauti prekes iš pardavėjos, minutėmis (> 0): ");
             } while (!int.TryParse(Console.ReadLine(), out gautiPrekesP2) || !(gautiPrekesP2 > 0));
 
             parduotuvė = new Parduotuvė(
@@ -62,14 +62,15 @@
             DateTime start = DateTime.Now;
             try
             {
-                protokolas.Įrašyti(parduotuvė.PirmaDalis());
+                protokolas.Įrašyti(parduotuvė.PradiniaiDuomenys());
                 protokolas.Įrašyti("ANTRA DALIS. Vykdymas\n");
-                protokolas.Įrašyti(parduotuvė.PaleistiTestąProcesas1());
-                protokolas.Įrašyti(parduotuvė.PaleistiTestąProcesas2());
+                protokolas.Įrašyti(parduotuvė.VykdytiProcesą1());
+                protokolas.Įrašyti(parduotuvė.VykdytiProcesą2());
                 protokolas.Įrašyti(parduotuvė.AtspausdintiAnalizę());
             }
             catch (Exception e) {
                 Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
             }
             protokolas.Dispose();
             DateTime end = DateTime.Now;

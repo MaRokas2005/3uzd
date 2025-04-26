@@ -1,0 +1,1673 @@
+﻿====================================================================================================
+|3 užduotis, 7 variantas. R. Braidokas, Programų sistemų 1 kursas, 2 grupė, 1 pogrupis             |
+|--------------------------------------------------------------------------------------------------|
+|Sąlyga:                                                                                           |
+|    Simuliuoti nesavitarnos parduotuvės veiklą.                                                   |
+|    Patyrinėti abu procesus, tiek klientų pasitenkinimo požiūriu (laukimo laiku),                 |
+|    tiek ekonominiu požiūriu (kasų užimtumu).                                                     |
+|--------------------------------------------------------------------------------------------------|
+|Procesas1:                                                                                        |
+|    pardavėja pilnai aptarnauja klientą: paduoda prekes, išmuša čekį, paima pinigus.              |
+|--------------------------------------------------------------------------------------------------|
+|Procesas2:                                                                                        |
+|    pardavėjas surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu            |
+|    klientas eina sumokėti prie kasininko, kuris išmuša čekį ir paima pinigus,                    |
+|    su šiuo čekiu pirkėjas grįžta prie jį aptarnavusio pardavėjo ir, šiam baigus                  |
+|    aptarnauti eilinį pirkėją, be eilės gauna savo prekes.                                        |
+====================================================================================================
+
+
+
+====================================================================================================
+|PIRMA DALIS. Pradiniai duomenys                                                                   |
+|==================================================================================================|
+|Bendri:                                                                                           |
+|    1) Simuliacijos trukmė: 60 minučių                                                            |
+|    2) Tikimybė ateiti pirkėjui: 20%                                                              |
+|--------------------------------------------------------------------------------------------------|
+|Procesas 1:                                                                                       |
+|    1) Pardavėjų skaičius: 5                                                                      |
+|    2) Aptarnavimo trukmė: 11 minučių                                                             |
+|--------------------------------------------------------------------------------------------------|
+|Procesas 2:                                                                                       |
+|    1) Pardavėjų skaičius: 3                                                                      |
+|    2) Kasininkių skaičius: 2                                                                     |
+|    3) Trukmė surašyti prekes: 5 minutės                                                          |
+|    4) Trukmė susimokėti už prekes: 5 minutės                                                     |
+|    5) Trukmė pasiimti prekes: 1 minutė                                                           |
+====================================================================================================
+
+
+
+ANTRA DALIS. Vykdymas
+====================================================================================================
+|Procesas 1                                                                                        |
+|==================================================================================================|
+|T = 0 minučių                                                                                     |
+|Būsena_0:                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 1 minutė                                                                                      |
+|Veiksmai_1                                                                                        |
+|Būsena_1                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 2 minutės                                                                                     |
+|Veiksmai_2                                                                                        |
+|    1) Atėjo naujas klientas: Klientas_1                                                          |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_1, liko 11 minučių                                |
+|Būsena_2                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 10 minučių                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 3 minutės                                                                                     |
+|Veiksmai_3                                                                                        |
+|Būsena_3                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 9 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 4 minutės                                                                                     |
+|Veiksmai_4                                                                                        |
+|Būsena_4                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 8 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 5 minutės                                                                                     |
+|Veiksmai_5                                                                                        |
+|Būsena_5                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 7 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 6 minutės                                                                                     |
+|Veiksmai_6                                                                                        |
+|Būsena_6                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 6 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 7 minutės                                                                                     |
+|Veiksmai_7                                                                                        |
+|Būsena_7                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 5 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 8 minutės                                                                                     |
+|Veiksmai_8                                                                                        |
+|Būsena_8                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 4 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 9 minutės                                                                                     |
+|Veiksmai_9                                                                                        |
+|Būsena_9                                                                                          |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 3 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 10 minučių                                                                                    |
+|Veiksmai_10                                                                                       |
+|Būsena_10                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 2 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 11 minučių                                                                                    |
+|Veiksmai_11                                                                                       |
+|Būsena_11                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                 |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 12 minučių                                                                                    |
+|Veiksmai_12                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_2                                                          |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_2, liko 11 minučių                                |
+|Būsena_12                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 10 minučių                               |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 13 minučių                                                                                    |
+|Veiksmai_13                                                                                       |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_1                                                   |
+|Būsena_13                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 9 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 14 minučių                                                                                    |
+|Veiksmai_14                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_3                                                          |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_3, liko 11 minučių                                |
+|Būsena_14                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 10 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 8 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 15 minučių                                                                                    |
+|Veiksmai_15                                                                                       |
+|Būsena_15                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 9 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 7 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 16 minučių                                                                                    |
+|Veiksmai_16                                                                                       |
+|Būsena_16                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 8 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 6 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 17 minučių                                                                                    |
+|Veiksmai_17                                                                                       |
+|Būsena_17                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 7 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 5 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 18 minučių                                                                                    |
+|Veiksmai_18                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_4                                                          |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_4, liko 11 minučių                                |
+|Būsena_18                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 6 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 4 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 10 minučių                               |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 19 minučių                                                                                    |
+|Veiksmai_19                                                                                       |
+|Būsena_19                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 5 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 3 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 9 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 20 minučių                                                                                    |
+|Veiksmai_20                                                                                       |
+|Būsena_20                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 4 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 2 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 8 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 21 minutė                                                                                     |
+|Veiksmai_21                                                                                       |
+|Būsena_21                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 3 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 1 minutė                                 |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 7 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 22 minutės                                                                                    |
+|Veiksmai_22                                                                                       |
+|Būsena_22                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 2 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 0 minučių                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 6 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 23 minutės                                                                                    |
+|Veiksmai_23                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_5                                                          |
+|    2) Pardavėjas_2 baigė aptarnauti Klientas_2                                                   |
+|    3) Pardavėjas_2 aptarnauja klientą Klientas_5, liko 11 minučių                                |
+|Būsena_23                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 1 minutė                                 |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 10 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 5 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 24 minutės                                                                                    |
+|Veiksmai_24                                                                                       |
+|Būsena_24                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_3, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 9 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 4 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 25 minutės                                                                                    |
+|Veiksmai_25                                                                                       |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_3                                                   |
+|Būsena_25                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 8 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 3 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 26 minutės                                                                                    |
+|Veiksmai_26                                                                                       |
+|Būsena_26                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 7 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 2 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 27 minutės                                                                                    |
+|Veiksmai_27                                                                                       |
+|Būsena_27                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 6 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 1 minutė                                 |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 28 minutės                                                                                    |
+|Veiksmai_28                                                                                       |
+|Būsena_28                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 5 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_4, liko 0 minučių                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 29 minutės                                                                                    |
+|Veiksmai_29                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_6                                                          |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_6, liko 11 minučių                                |
+|    3) Pardavėjas_3 baigė aptarnauti Klientas_4                                                   |
+|Būsena_29                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 10 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 4 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 30 minučių                                                                                    |
+|Veiksmai_30                                                                                       |
+|Būsena_30                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 9 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 3 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 31 minutė                                                                                     |
+|Veiksmai_31                                                                                       |
+|Būsena_31                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 8 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 2 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 32 minutės                                                                                    |
+|Veiksmai_32                                                                                       |
+|Būsena_32                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 7 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 1 minutė                                 |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 33 minutės                                                                                    |
+|Veiksmai_33                                                                                       |
+|Būsena_33                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 6 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 0 minučių                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 34 minutės                                                                                    |
+|Veiksmai_34                                                                                       |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_5                                                   |
+|Būsena_34                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 5 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 35 minutės                                                                                    |
+|Veiksmai_35                                                                                       |
+|Būsena_35                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 4 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 36 minutės                                                                                    |
+|Veiksmai_36                                                                                       |
+|Būsena_36                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 3 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 37 minutės                                                                                    |
+|Veiksmai_37                                                                                       |
+|Būsena_37                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 2 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 38 minutės                                                                                    |
+|Veiksmai_38                                                                                       |
+|Būsena_38                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 1 minutė                                 |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 39 minutės                                                                                    |
+|Veiksmai_39                                                                                       |
+|Būsena_39                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_6, liko 0 minučių                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 40 minučių                                                                                    |
+|Veiksmai_40                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_7                                                          |
+|    2) Pardavėjas_1 baigė aptarnauti Klientas_6                                                   |
+|    3) Pardavėjas_1 aptarnauja klientą Klientas_7, liko 11 minučių                                |
+|Būsena_40                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 10 minučių                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 41 minutė                                                                                     |
+|Veiksmai_41                                                                                       |
+|Būsena_41                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 9 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 42 minutės                                                                                    |
+|Veiksmai_42                                                                                       |
+|Būsena_42                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 8 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 43 minutės                                                                                    |
+|Veiksmai_43                                                                                       |
+|Būsena_43                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 7 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 44 minutės                                                                                    |
+|Veiksmai_44                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_8                                                          |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_8, liko 11 minučių                                |
+|Būsena_44                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 6 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 10 minučių                               |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 45 minutės                                                                                    |
+|Veiksmai_45                                                                                       |
+|Būsena_45                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 5 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 9 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 46 minutės                                                                                    |
+|Veiksmai_46                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_9                                                          |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_9, liko 11 minučių                                |
+|Būsena_46                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 4 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 8 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 10 minučių                               |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 47 minutės                                                                                    |
+|Veiksmai_47                                                                                       |
+|Būsena_47                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 3 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 7 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 9 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 48 minutės                                                                                    |
+|Veiksmai_48                                                                                       |
+|Būsena_48                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 2 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 6 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 8 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 49 minutės                                                                                    |
+|Veiksmai_49                                                                                       |
+|Būsena_49                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                 |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 5 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 7 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 50 minučių                                                                                    |
+|Veiksmai_50                                                                                       |
+|Būsena_50                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 4 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 6 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 51 minutė                                                                                     |
+|Veiksmai_51                                                                                       |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_7                                                   |
+|Būsena_51                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 3 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 5 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 52 minutės                                                                                    |
+|Veiksmai_52                                                                                       |
+|Būsena_52                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 2 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 4 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 53 minutės                                                                                    |
+|Veiksmai_53                                                                                       |
+|Būsena_53                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 1 minutė                                 |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 3 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 54 minutės                                                                                    |
+|Veiksmai_54                                                                                       |
+|Būsena_54                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 0 minučių                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 2 minutės                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 55 minutės                                                                                    |
+|Veiksmai_55                                                                                       |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_8                                                   |
+|Būsena_55                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 1 minutė                                 |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 56 minutės                                                                                    |
+|Veiksmai_56                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_10                                                         |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_10, liko 11 minučių                               |
+|Būsena_56                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 10 minučių                              |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 0 minučių                                |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 57 minutės                                                                                    |
+|Veiksmai_57                                                                                       |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_9                                                   |
+|Būsena_57                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 9 minutės                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 58 minutės                                                                                    |
+|Veiksmai_58                                                                                       |
+|Būsena_58                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 8 minutės                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 59 minutės                                                                                    |
+|Veiksmai_59                                                                                       |
+|Būsena_59                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 7 minutės                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+|                                                                                                  |
+|T = 60 minučių                                                                                    |
+|Veiksmai_60                                                                                       |
+|Būsena_60                                                                                         |
+|    1) Klientų eilė: {}                                                                           |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 6 minutės                               |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|        Pardavėjas_4 laisvas                                                                      |
+|        Pardavėjas_5 laisvas                                                                      |
+====================================================================================================
+
+
+
+====================================================================================================
+|Procesas 2                                                                                        |
+|==================================================================================================|
+|T = 0 minučių                                                                                     |
+|Būsena_0:                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 1 minutė                                                                                      |
+|Veiksmai_1                                                                                        |
+|    1) Atėjo naujas klientas: Klientas_1                                                          |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_1, liko 5 minutės                             |
+|Būsena_1                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 4 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 2 minutės                                                                                     |
+|Veiksmai_2                                                                                        |
+|Būsena_2                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 3 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 3 minutės                                                                                     |
+|Veiksmai_3                                                                                        |
+|Būsena_3                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 2 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 4 minutės                                                                                     |
+|Veiksmai_4                                                                                        |
+|Būsena_4                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 1 minutė                             |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 5 minutės                                                                                     |
+|Veiksmai_5                                                                                        |
+|    1) Atėjo naujas klientas: Klientas_2                                                          |
+|    2) Pardavėjas_2 surašo prekes klientui Klientas_2, liko 5 minutės                             |
+|Būsena_5                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_2, liko 4 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 6 minutės                                                                                     |
+|Veiksmai_6                                                                                        |
+|    1) Pardavėjas_1 baigė prekių surašymą klientui Klientas_1                                     |
+|    2) Kasininkas_1 aptarnauja klientą Klientas_1, liko 5 minutės                                 |
+|Būsena_6                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 surašo prekes klientui Klientas_2, liko 3 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 4 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 7 minutės                                                                                     |
+|Veiksmai_7                                                                                        |
+|    1) Atėjo naujas klientas: Klientas_3                                                          |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_3, liko 5 minutės                             |
+|Būsena_7                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_3, liko 4 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_2, liko 2 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 3 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 8 minutės                                                                                     |
+|Veiksmai_8                                                                                        |
+|Būsena_8                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_3, liko 3 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_2, liko 1 minutė                             |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 2 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 9 minutės                                                                                     |
+|Veiksmai_9                                                                                        |
+|Būsena_9                                                                                          |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_3, liko 2 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_2, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                 |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 10 minučių                                                                                    |
+|Veiksmai_10                                                                                       |
+|    1) Pardavėjas_2 baigė prekių surašymą klientui Klientas_2                                     |
+|    2) Kasininkas_2 aptarnauja klientą Klientas_2, liko 5 minutės                                 |
+|Būsena_10                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_3, liko 1 minutė                             |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_2, liko 4 minutės                                |
+|                                                                                                  |
+|T = 11 minučių                                                                                    |
+|Veiksmai_11                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_1                                                   |
+|Būsena_11                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_3, liko 0 minučių                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 aptarnauja klientą Klientas_2, liko 3 minutės                                |
+|                                                                                                  |
+|T = 12 minučių                                                                                    |
+|Veiksmai_12                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_4                                                          |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_3                                     |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_1, liko 1 minutė                              |
+|    4) Pardavėjas_2 surašo prekes klientui Klientas_4, liko 5 minutės                             |
+|    5) Kasininkas_1 aptarnauja klientą Klientas_3, liko 5 minutės                                 |
+|Būsena_12                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_1, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 4 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 4 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_2, liko 2 minutės                                |
+|                                                                                                  |
+|T = 13 minučių                                                                                    |
+|Veiksmai_13                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_5                                                          |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_1                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_5, liko 5 minutės                             |
+|Būsena_13                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 4 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 3 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 3 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_2, liko 1 minutė                                 |
+|                                                                                                  |
+|T = 14 minučių                                                                                    |
+|Veiksmai_14                                                                                       |
+|Būsena_14                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 3 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 2 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 2 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_2, liko 0 minučių                                |
+|                                                                                                  |
+|T = 15 minučių                                                                                    |
+|Veiksmai_15                                                                                       |
+|    1) Kasininkas_2 baigė aptarnauti Klientas_2                                                   |
+|Būsena_15                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 2 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 1 minutė                             |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 1 minutė                                 |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 16 minučių                                                                                    |
+|Veiksmai_16                                                                                       |
+|Būsena_16                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 1 minutė                             |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 0 minučių                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 17 minučių                                                                                    |
+|Veiksmai_17                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_3                                                   |
+|    2) Pardavėjas_2 baigė prekių surašymą klientui Klientas_4                                     |
+|    3) Pardavėjas_2 atneša prekes klientui Klientas_2, liko 1 minutė                              |
+|    4) Kasininkas_1 aptarnauja klientą Klientas_4, liko 5 minutės                                 |
+|Būsena_17                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 0 minučių                            |
+|        Pardavėjas_2 atneša prekes klientui Klientas_2, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 4 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 18 minučių                                                                                    |
+|Veiksmai_18                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surašymą klientui Klientas_5                                     |
+|    2) Pardavėjas_1 atneša prekes klientui Klientas_3, liko 1 minutė                              |
+|    3) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_2                                    |
+|    4) Kasininkas_2 aptarnauja klientą Klientas_5, liko 5 minutės                                 |
+|Būsena_18                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_3, liko 0 minučių                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 3 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_5, liko 4 minutės                                |
+|                                                                                                  |
+|T = 19 minučių                                                                                    |
+|Veiksmai_19                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_3                                    |
+|Būsena_19                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 2 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_5, liko 3 minutės                                |
+|                                                                                                  |
+|T = 20 minučių                                                                                    |
+|Veiksmai_20                                                                                       |
+|Būsena_20                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 1 minutė                                 |
+|        Kasininkas_2 aptarnauja klientą Klientas_5, liko 2 minutės                                |
+|                                                                                                  |
+|T = 21 minutė                                                                                     |
+|Veiksmai_21                                                                                       |
+|Būsena_21                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_5, liko 1 minutė                                 |
+|                                                                                                  |
+|T = 22 minutės                                                                                    |
+|Veiksmai_22                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_4                                                   |
+|    2) Pardavėjas_2 atneša prekes klientui Klientas_4, liko 1 minutė                              |
+|Būsena_22                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 atneša prekes klientui Klientas_4, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 aptarnauja klientą Klientas_5, liko 0 minučių                                |
+|                                                                                                  |
+|T = 23 minutės                                                                                    |
+|Veiksmai_23                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_6                                                          |
+|    2) Kasininkas_2 baigė aptarnauti Klientas_5                                                   |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_5, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_4                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_6, liko 5 minutės                             |
+|Būsena_23                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_5, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_6, liko 4 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 24 minutės                                                                                    |
+|Veiksmai_24                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_5                                    |
+|Būsena_24                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 surašo prekes klientui Klientas_6, liko 3 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 25 minutės                                                                                    |
+|Veiksmai_25                                                                                       |
+|Būsena_25                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 surašo prekes klientui Klientas_6, liko 2 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 26 minutės                                                                                    |
+|Veiksmai_26                                                                                       |
+|Būsena_26                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 surašo prekes klientui Klientas_6, liko 1 minutė                             |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 27 minutės                                                                                    |
+|Veiksmai_27                                                                                       |
+|Būsena_27                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 surašo prekes klientui Klientas_6, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 28 minutės                                                                                    |
+|Veiksmai_28                                                                                       |
+|    1) Pardavėjas_2 baigė prekių surašymą klientui Klientas_6                                     |
+|    2) Kasininkas_1 aptarnauja klientą Klientas_6, liko 5 minutės                                 |
+|Būsena_28                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 4 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 29 minutės                                                                                    |
+|Veiksmai_29                                                                                       |
+|Būsena_29                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 3 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 30 minučių                                                                                    |
+|Veiksmai_30                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_7                                                          |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_7, liko 5 minutės                             |
+|Būsena_30                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_7, liko 4 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 2 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 31 minutė                                                                                     |
+|Veiksmai_31                                                                                       |
+|Būsena_31                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_7, liko 3 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 1 minutė                                 |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 32 minutės                                                                                    |
+|Veiksmai_32                                                                                       |
+|Būsena_32                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_7, liko 2 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 0 minučių                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 33 minutės                                                                                    |
+|Veiksmai_33                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_6                                                   |
+|    2) Pardavėjas_2 atneša prekes klientui Klientas_6, liko 1 minutė                              |
+|Būsena_33                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_7, liko 1 minutė                             |
+|        Pardavėjas_2 atneša prekes klientui Klientas_6, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 34 minutės                                                                                    |
+|Veiksmai_34                                                                                       |
+|    1) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_6                                    |
+|Būsena_34                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_7, liko 0 minučių                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 35 minutės                                                                                    |
+|Veiksmai_35                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_8                                                          |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_7                                     |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_8, liko 5 minutės                             |
+|    4) Kasininkas_1 aptarnauja klientą Klientas_7, liko 5 minutės                                 |
+|Būsena_35                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_8, liko 4 minutės                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 4 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 36 minutės                                                                                    |
+|Veiksmai_36                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_9                                                          |
+|    2) Pardavėjas_2 surašo prekes klientui Klientas_9, liko 5 minutės                             |
+|Būsena_36                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_8, liko 3 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_9, liko 4 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 3 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 37 minutės                                                                                    |
+|Veiksmai_37                                                                                       |
+|Būsena_37                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_8, liko 2 minutės                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_9, liko 3 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 2 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 38 minutės                                                                                    |
+|Veiksmai_38                                                                                       |
+|Būsena_38                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_8, liko 1 minutė                             |
+|        Pardavėjas_2 surašo prekes klientui Klientas_9, liko 2 minutės                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                 |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 39 minutės                                                                                    |
+|Veiksmai_39                                                                                       |
+|Būsena_39                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_8, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_9, liko 1 minutė                             |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 40 minučių                                                                                    |
+|Veiksmai_40                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_7                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_8                                     |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_7, liko 1 minutė                              |
+|    4) Kasininkas_1 aptarnauja klientą Klientas_8, liko 5 minutės                                 |
+|Būsena_40                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_7, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_9, liko 0 minučių                            |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 4 minutės                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 41 minutė                                                                                     |
+|Veiksmai_41                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_7                                    |
+|    2) Pardavėjas_2 baigė prekių surašymą klientui Klientas_9                                     |
+|    3) Kasininkas_2 aptarnauja klientą Klientas_9, liko 5 minutės                                 |
+|Būsena_41                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 3 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_9, liko 4 minutės                                |
+|                                                                                                  |
+|T = 42 minutės                                                                                    |
+|Veiksmai_42                                                                                       |
+|Būsena_42                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 2 minutės                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_9, liko 3 minutės                                |
+|                                                                                                  |
+|T = 43 minutės                                                                                    |
+|Veiksmai_43                                                                                       |
+|Būsena_43                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 1 minutė                                 |
+|        Kasininkas_2 aptarnauja klientą Klientas_9, liko 2 minutės                                |
+|                                                                                                  |
+|T = 44 minutės                                                                                    |
+|Veiksmai_44                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_10                                                         |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_10, liko 5 minutės                            |
+|Būsena_44                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 4 minutės                           |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 0 minučių                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_9, liko 1 minutė                                 |
+|                                                                                                  |
+|T = 45 minutės                                                                                    |
+|Veiksmai_45                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_11                                                         |
+|    2) Kasininkas_1 baigė aptarnauti Klientas_8                                                   |
+|    3) Pardavėjas_2 surašo prekes klientui Klientas_11, liko 5 minutės                            |
+|Būsena_45                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 3 minutės                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 4 minutės                           |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 aptarnauja klientą Klientas_9, liko 0 minučių                                |
+|                                                                                                  |
+|T = 46 minutės                                                                                    |
+|Veiksmai_46                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_12                                                         |
+|    2) Kasininkas_2 baigė aptarnauti Klientas_9                                                   |
+|    3) Pardavėjas_3 surašo prekes klientui Klientas_12, liko 5 minutės                            |
+|Būsena_46                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 2 minutės                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 3 minutės                           |
+|        Pardavėjas_3 surašo prekes klientui Klientas_12, liko 4 minutės                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 47 minutės                                                                                    |
+|Veiksmai_47                                                                                       |
+|Būsena_47                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 1 minutė                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 2 minutės                           |
+|        Pardavėjas_3 surašo prekes klientui Klientas_12, liko 3 minutės                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 48 minutės                                                                                    |
+|Veiksmai_48                                                                                       |
+|Būsena_48                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 1 minutė                            |
+|        Pardavėjas_3 surašo prekes klientui Klientas_12, liko 2 minutės                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 49 minutės                                                                                    |
+|Veiksmai_49                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surašymą klientui Klientas_10                                    |
+|    2) Pardavėjas_1 atneša prekes klientui Klientas_8, liko 1 minutė                              |
+|    3) Kasininkas_1 aptarnauja klientą Klientas_10, liko 5 minutės                                |
+|Būsena_49                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_8, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 0 minučių                           |
+|        Pardavėjas_3 surašo prekes klientui Klientas_12, liko 1 minutė                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 4 minutės                               |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 50 minučių                                                                                    |
+|Veiksmai_50                                                                                       |
+|    1) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_8                                    |
+|    2) Pardavėjas_2 baigė prekių surašymą klientui Klientas_11                                    |
+|    3) Pardavėjas_2 atneša prekes klientui Klientas_9, liko 1 minutė                              |
+|    4) Kasininkas_2 aptarnauja klientą Klientas_11, liko 5 minutės                                |
+|Būsena_50                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 atneša prekes klientui Klientas_9, liko 0 minučių                            |
+|        Pardavėjas_3 surašo prekes klientui Klientas_12, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 3 minutės                               |
+|        Kasininkas_2 aptarnauja klientą Klientas_11, liko 4 minutės                               |
+|                                                                                                  |
+|T = 51 minutė                                                                                     |
+|Veiksmai_51                                                                                       |
+|    1) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_9                                    |
+|    2) Pardavėjas_3 baigė prekių surašymą klientui Klientas_12                                    |
+|Būsena_51                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus:                                                               |
+|        Klientas_12, laukia 6 min                                                                 |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 2 minutės                               |
+|        Kasininkas_2 aptarnauja klientą Klientas_11, liko 3 minutės                               |
+|                                                                                                  |
+|T = 52 minutės                                                                                    |
+|Veiksmai_52                                                                                       |
+|Būsena_52                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus:                                                               |
+|        Klientas_12, laukia 7 min                                                                 |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 1 minutė                                |
+|        Kasininkas_2 aptarnauja klientą Klientas_11, liko 2 minutės                               |
+|                                                                                                  |
+|T = 53 minutės                                                                                    |
+|Veiksmai_53                                                                                       |
+|Būsena_53                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus:                                                               |
+|        Klientas_12, laukia 8 min                                                                 |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
+|        Kasininkas_2 aptarnauja klientą Klientas_11, liko 1 minutė                                |
+|                                                                                                  |
+|T = 54 minutės                                                                                    |
+|Veiksmai_54                                                                                       |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_10                                                  |
+|    2) Pardavėjas_1 atneša prekes klientui Klientas_10, liko 1 minutė                             |
+|    3) Kasininkas_1 aptarnauja klientą Klientas_12, liko 5 minutės                                |
+|Būsena_54                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_10, liko 0 minučių                           |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 4 minutės                               |
+|        Kasininkas_2 aptarnauja klientą Klientas_11, liko 0 minučių                               |
+|                                                                                                  |
+|T = 55 minutės                                                                                    |
+|Veiksmai_55                                                                                       |
+|    1) Kasininkas_2 baigė aptarnauti Klientas_11                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_10                                   |
+|    3) Pardavėjas_2 atneša prekes klientui Klientas_11, liko 1 minutė                             |
+|Būsena_55                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 atneša prekes klientui Klientas_11, liko 0 minučių                           |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 3 minutės                               |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 56 minutės                                                                                    |
+|Veiksmai_56                                                                                       |
+|    1) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_11                                   |
+|Būsena_56                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 2 minutės                               |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 57 minutės                                                                                    |
+|Veiksmai_57                                                                                       |
+|Būsena_57                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 1 minutė                                |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 58 minutės                                                                                    |
+|Veiksmai_58                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_13                                                         |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_13, liko 5 minutės                            |
+|Būsena_58                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_13, liko 4 minutės                           |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 0 minučių                               |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 59 minutės                                                                                    |
+|Veiksmai_59                                                                                       |
+|    1) Atėjo naujas klientas: Klientas_14                                                         |
+|    2) Kasininkas_1 baigė aptarnauti Klientas_12                                                  |
+|    3) Pardavėjas_2 surašo prekes klientui Klientas_14, liko 5 minutės                            |
+|    4) Pardavėjas_3 atneša prekes klientui Klientas_12, liko 1 minutė                             |
+|Būsena_59                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_13, liko 3 minutės                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_14, liko 4 minutės                           |
+|        Pardavėjas_3 atneša prekes klientui Klientas_12, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+|                                                                                                  |
+|T = 60 minučių                                                                                    |
+|Veiksmai_60                                                                                       |
+|    1) Pardavėjas_3 baigė prekių surinkimą klientui Klientas_12                                   |
+|Būsena_60                                                                                         |
+|    1) Klientų eilė pas pardavėjus: {}                                                            |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_13, liko 2 minutės                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_14, liko 3 minutės                           |
+|        Pardavėjas_3 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|        Kasininkas_2 laisvas                                                                      |
+====================================================================================================
+
+
+
+====================================================================================================
+|ANALIZĖ                                                                                           |
+|==================================================================================================|
+|Procesas1:                                                                                        |
+|Daugiausia kiek buvo žmonių eilėje yra 0                                                          |
+|Aptarnauti 9 klientai                                                                             |
+|Minimalus aptarnavimo laikas: 11 minučių                                                          |
+|Vidutinis aptarnavimo laikas: 11.00 minučių                                                       |
+|Ilgiausias aptarnavimo laikas: 11 minučių                                                         |
+|Būtų užtekę 3 pardavėjų                                                                           |
+|Pardavėjų vidutinis užimtumas:                                                                    |
+|    Pardavėjas_1: 81.67%                                                                          |
+|    Pardavėjas_2: 55.00%                                                                          |
+|    Pardavėjas_3: 36.67%                                                                          |
+|    Pardavėjas_4: 0.00%                                                                           |
+|    Pardavėjas_5: 0.00%                                                                           |
+|--------------------------------------------------------------------------------------------------|
+|Procesas2:                                                                                        |
+|Daugiausia kiek buvo žmonių eilėje yra 2                                                          |
+|Aptarnauti 12 klientų                                                                             |
+|Minimalus aptarnavimo laikas: 12 minučių                                                          |
+|Vidutinis aptarnavimo laikas: 13.25 minučių                                                       |
+|Ilgiausias aptarnavimo laikas: 16 minučių                                                         |
+|Būtų užtekę 3 pardavėjų ir 2 kasųs                                                                 |
+|Pardavėjų vidutinis užimtumas:                                                                    |
+|    Pardavėjas_1: 75.00%                                                                          |
+|    Pardavėjas_2: 65.00%                                                                          |
+|    Pardavėjas_3: 13.33%                                                                          |
+|Kasininkų vidutinis užimtumas:                                                                    |
+|    Kasininkas_1: 66.67%                                                                          |
+|    Kasininkas_2: 33.33%                                                                          |
+|--------------------------------------------------------------------------------------------------|
+|Apibendrinimas:                                                                                   |
+|    Daugiau klientų aptarnauta antrame procese.                                                   |
+|    Mažiau kasos aparatų reikėjo pirmame procese.                                                 |
+|                                                                                                  |
+====================================================================================================

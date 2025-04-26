@@ -19,10 +19,10 @@ namespace _3uzd
             $"|{"    pardavėja pilnai aptarnauja klientą: paduoda prekes, išmuša čekį, paima pinigus.",-EILUTĖS_ILGIS + 2 }|\n" +
             $"|{new string('-', EILUTĖS_ILGIS - 2)                                                                        }|\n" +
             $"|{"Procesas2:",-EILUTĖS_ILGIS + 2                                                                           }|\n" +
-            $"|{"    pardavėja surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu",-EILUTĖS_ILGIS + 2}|\n" +
-            $"|{"    klientas eina sumokėti prie kasininkės, kuri išmuša čekį ir paima pinigus,",-EILUTĖS_ILGIS + 2       }|\n" +
-            $"|{"    su šiuo čekiu pirkėjas grįžta prie jį aptarnavusios pardavėjos ir, šiai baigus",-EILUTĖS_ILGIS + 2   }|\n" +
-            $"|{"    aptarnauti eilinį pirkėją, be eilės gauna prekes.",-EILUTĖS_ILGIS + 2                                }|\n" +
+            $"|{"    pardavėjas surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu",-EILUTĖS_ILGIS + 2}|\n" +
+            $"|{"    klientas eina sumokėti prie kasininko, kuris išmuša čekį ir paima pinigus,",-EILUTĖS_ILGIS + 2       }|\n" +
+            $"|{"    su šiuo čekiu pirkėjas grįžta prie jį aptarnavusio pardavėjo ir, šiam baigus",-EILUTĖS_ILGIS + 2   }|\n" +
+            $"|{"    aptarnauti eilinį pirkėją, be eilės gauna savo prekes.",-EILUTĖS_ILGIS + 2                                }|\n" +
             $"{new string('=', EILUTĖS_ILGIS)                                                                             }\n\n\n";
         public Protokolas(int numeris)
         {
