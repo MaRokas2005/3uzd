@@ -327,7 +327,7 @@ namespace _3uzd
             }
             else
             {
-                sb.AppendLine($"|{$"    Mažiau kasos aparatų reikėjo {(kasųUžimtumasP1.Count(n => n > 0) < pardavėjųUžimtumasP2.Count(n => n > 0) + kasųUžimtumasP2.Count(n => n > 0) ? "pirmame" : "antrame")} procese.",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"    Mažiau kasos aparatų reikėjo {(kasųUžimtumasP1.Count(n => n > 0) < kasųUžimtumasP2.Count(n => n > 0) ? "pirmame" : "antrame")} procese.",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
 
             sb.Append($"{new string('=', Protokolas.EILUTĖS_ILGIS)}");
