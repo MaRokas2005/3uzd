@@ -7,10 +7,10 @@
 |    tiek ekonominiu požiūriu (kasų užimtumu).                                                     |
 |--------------------------------------------------------------------------------------------------|
 |Procesas1:                                                                                        |
-|    pardavėja pilnai aptarnauja klientą: paduoda prekes, išmuša čekį, paima pinigus.              |
+|    Pardavėjas pilnai aptarnauja klientą: paduoda prekes, išmuša čekį, paima pinigus.             |
 |--------------------------------------------------------------------------------------------------|
 |Procesas2:                                                                                        |
-|    pardavėjas surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu            |
+|    Pardavėjas surašo pirkėjo pageidaujamas prekes popieriaus lapelio, su šiuo lapeliu            |
 |    klientas eina sumokėti prie kasininko, kuris išmuša čekį ir paima pinigus,                    |
 |    su šiuo čekiu pirkėjas grįžta prie jį aptarnavusio pardavėjo ir, šiam baigus                  |
 |    aptarnauti eilinį pirkėją, be eilės gauna savo prekes.                                        |
@@ -1117,5 +1117,4 @@ ANTRA DALIS. Vykdymas
 |Apibendrinimas:                                                                                   |
 |    Aptarnauta vienodai klientų abiejuose procesuose.                                             |
 |    Abiejuose procesuose vienodai reikėjo kasų aparatų.                                           |
-|                                                                                                  |
 ====================================================================================================
