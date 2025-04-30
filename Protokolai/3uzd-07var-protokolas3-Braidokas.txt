@@ -31,7 +31,7 @@
 |--------------------------------------------------------------------------------------------------|
 |Procesas 2:                                                                                       |
 |    1) Pardavėjų skaičius: 3                                                                      |
-|    2) Kasininkių skaičius: 2                                                                     |
+|    2) Kasininkų skaičius: 2                                                                      |
 |    3) Trukmė surašyti prekes: 5 minutės                                                          |
 |    4) Trukmė susimokėti už prekes: 5 minutės                                                     |
 |    5) Trukmė pasiimti prekes: 1 minutė                                                           |

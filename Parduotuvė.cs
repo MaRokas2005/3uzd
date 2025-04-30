@@ -68,7 +68,7 @@ namespace _3uzd
             sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
             sb.AppendLine($"|{"Procesas 2:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"    1) Pardavėjų skaičius: {pardavėjaiP2,-18}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{$"    2) Kasininkių skaičius: {kasininkaiP2,-18}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            sb.AppendLine($"|{$"    2) Kasininkų skaičius: {kasininkaiP2,-18}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"    3) Trukmė surašyti prekes: {surašytiPrekesP2 + $" {GaukMinučiųŽymę(surašytiPrekesP2)}",-22}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"    4) Trukmė susimokėti už prekes: {sumokėtiKasininkuiP2 + $" {GaukMinučiųŽymę(sumokėtiKasininkuiP2)}",-26}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"    5) Trukmė pasiimti prekes: {gautiPrekesP2 + $" {GaukMinučiųŽymę(gautiPrekesP2)}",-19}",-Protokolas.EILUTĖS_ILGIS + 2}|");
