@@ -51,10 +51,19 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 laisvas                                                                      |
 |        Pardavėjas_3 laisvas                                                                      |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 1 minutė                                                                                      |
+|Būsena_0:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_1, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|                                                                                                  |
 |Veiksmai_1:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_1                                                          |
-|    2) Pardavėjas_1 aptarnauja klientą Klientas_1, liko 3 minutės                                 |
+|    1) Pardavėjas_1 aptarnauja klientą Klientas_1, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_1:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -62,10 +71,19 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 laisvas                                                                      |
 |        Pardavėjas_3 laisvas                                                                      |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 2 minutės                                                                                     |
+|Būsena_1:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_2, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 2 minutės                                |
+|        Pardavėjas_2 laisvas                                                                      |
+|        Pardavėjas_3 laisvas                                                                      |
+|                                                                                                  |
 |Veiksmai_2:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_2                                                          |
-|    2) Pardavėjas_2 aptarnauja klientą Klientas_2, liko 3 minutės                                 |
+|    1) Pardavėjas_2 aptarnauja klientą Klientas_2, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_2:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -73,10 +91,19 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 2 minutės                                |
 |        Pardavėjas_3 laisvas                                                                      |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 3 minutės                                                                                     |
+|Būsena_2:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_3, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                 |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 2 minutės                                |
+|        Pardavėjas_3 laisvas                                                                      |
+|                                                                                                  |
 |Veiksmai_3:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_3                                                          |
-|    2) Pardavėjas_3 aptarnauja klientą Klientas_3, liko 3 minutės                                 |
+|    1) Pardavėjas_3 aptarnauja klientą Klientas_3, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_3:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -84,11 +111,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 2 minutės                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 4 minutės                                                                                     |
+|Būsena_3:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_4, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 1 minutė                                 |
+|        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 2 minutės                                |
+|                                                                                                  |
 |Veiksmai_4:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_4                                                          |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_1                                                   |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_4, liko 3 minutės                                 |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_1                                                   |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_4, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_4:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -96,11 +132,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 1 minutė                                 |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 5 minutės                                                                                     |
+|Būsena_4:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_5, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 2 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_2, liko 0 minučių                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 1 minutė                                 |
+|                                                                                                  |
 |Veiksmai_5:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_5                                                          |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_2                                                   |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_5, liko 3 minutės                                 |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_2                                                   |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_5, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_5:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -108,11 +153,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 2 minutės                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 6 minutės                                                                                     |
+|Būsena_5:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_6, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 1 minutė                                 |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 2 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_3, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_6:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_6                                                          |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_3                                                   |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_6, liko 3 minutės                                 |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_3                                                   |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_6, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_6:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -120,11 +174,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 2 minutės                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 7 minutės                                                                                     |
+|Būsena_6:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_7, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 1 minutė                                 |
+|        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 2 minutės                                |
+|                                                                                                  |
 |Veiksmai_7:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_7                                                          |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_4                                                   |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_7, liko 3 minutės                                 |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_4                                                   |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_7, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_7:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -132,11 +195,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 1 minutė                                 |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 8 minutės                                                                                     |
+|Būsena_7:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_8, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 2 minutės                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_5, liko 0 minučių                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 1 minutė                                 |
+|                                                                                                  |
 |Veiksmai_8:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_8                                                          |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_5                                                   |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_8, liko 3 minutės                                 |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_5                                                   |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_8, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_8:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -144,11 +216,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 2 minutės                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 9 minutės                                                                                     |
+|Būsena_8:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_9, laukia 0 min                                                                  |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                 |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 2 minutės                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_6, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_9:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_9                                                          |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_6                                                   |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_9, liko 3 minutės                                 |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_6                                                   |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_9, liko 3 minutės                                 |
+|                                                                                                  |
 |Būsena_9:                                                                                         |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -156,11 +237,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 1 minutė                                 |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 2 minutės                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 10 minučių                                                                                    |
+|Būsena_9:                                                                                         |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_10, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 1 minutė                                 |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 2 minutės                                |
+|                                                                                                  |
 |Veiksmai_10:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_10                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_7                                                   |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_10, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_7                                                   |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_10, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_10:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -168,11 +258,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 0 minučių                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 1 minutė                                 |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 11 minučių                                                                                    |
+|Būsena_10:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_11, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_8, liko 0 minučių                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 1 minutė                                 |
+|                                                                                                  |
 |Veiksmai_11:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_11                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_8                                                   |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_11, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_8                                                   |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_11, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_11:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -180,11 +279,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 12 minučių                                                                                    |
+|Būsena_11:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_12, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_9, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_12:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_12                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_9                                                   |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_12, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_9                                                   |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_12, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_12:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -192,11 +300,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 13 minučių                                                                                    |
+|Būsena_12:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_13, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_13:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_13                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_10                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_13, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_10                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_13, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_13:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -204,11 +321,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 14 minučių                                                                                    |
+|Būsena_13:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_14, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_11, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_14:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_14                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_11                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_14, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_11                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_14, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_14:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -216,11 +342,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 15 minučių                                                                                    |
+|Būsena_14:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_15, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_12, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_15:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_15                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_12                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_15, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_12                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_15, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_15:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -228,11 +363,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 16 minučių                                                                                    |
+|Būsena_15:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_16, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_13, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_16:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_16                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_13                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_16, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_13                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_16, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_16:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -240,11 +384,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 17 minučių                                                                                    |
+|Būsena_16:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_17, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_14, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_17:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_17                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_14                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_17, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_14                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_17, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_17:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -252,11 +405,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 18 minučių                                                                                    |
+|Būsena_17:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_18, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_15, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_18:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_18                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_15                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_18, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_15                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_18, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_18:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -264,11 +426,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 19 minučių                                                                                    |
+|Būsena_18:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_19, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_16, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_19:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_19                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_16                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_19, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_16                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_19, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_19:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -276,11 +447,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 20 minučių                                                                                    |
+|Būsena_19:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_20, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_17, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_20:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_20                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_17                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_20, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_17                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_20, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_20:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -288,11 +468,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 21 minutė                                                                                     |
+|Būsena_20:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_21, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_18, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_21:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_21                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_18                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_21, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_18                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_21, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_21:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -300,11 +489,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 22 minutės                                                                                    |
+|Būsena_21:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_22, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_19, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_22:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_22                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_19                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_22, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_19                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_22, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_22:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -312,11 +510,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 23 minutės                                                                                    |
+|Būsena_22:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_23, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_20, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_23:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_23                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_20                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_23, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_20                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_23, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_23:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -324,11 +531,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 24 minutės                                                                                    |
+|Būsena_23:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_24, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_21, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_24:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_24                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_21                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_24, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_21                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_24, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_24:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -336,11 +552,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 25 minutės                                                                                    |
+|Būsena_24:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_25, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_22, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_25:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_25                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_22                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_25, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_22                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_25, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_25:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -348,11 +573,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 26 minutės                                                                                    |
+|Būsena_25:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_26, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_23, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_26:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_26                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_23                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_26, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_23                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_26, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_26:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -360,11 +594,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 27 minutės                                                                                    |
+|Būsena_26:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_27, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_24, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_27:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_27                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_24                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_27, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_24                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_27, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_27:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -372,11 +615,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 1 minutė                                |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 2 minutės                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 28 minutės                                                                                    |
+|Būsena_27:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_28, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_25, liko 0 minučių                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 1 minutė                                |
+|        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 2 minutės                               |
+|                                                                                                  |
 |Veiksmai_28:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_28                                                         |
-|    2) Pardavėjas_1 baigė aptarnauti Klientas_25                                                  |
-|    3) Pardavėjas_1 aptarnauja klientą Klientas_28, liko 3 minutės                                |
+|    1) Pardavėjas_1 baigė aptarnauti Klientas_25                                                  |
+|    2) Pardavėjas_1 aptarnauja klientą Klientas_28, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_28:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -384,11 +636,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 0 minučių                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 1 minutė                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 29 minutės                                                                                    |
+|Būsena_28:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_29, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_28, liko 2 minutės                               |
+|        Pardavėjas_2 aptarnauja klientą Klientas_26, liko 0 minučių                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 1 minutė                                |
+|                                                                                                  |
 |Veiksmai_29:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_29                                                         |
-|    2) Pardavėjas_2 baigė aptarnauti Klientas_26                                                  |
-|    3) Pardavėjas_2 aptarnauja klientą Klientas_29, liko 3 minutės                                |
+|    1) Pardavėjas_2 baigė aptarnauti Klientas_26                                                  |
+|    2) Pardavėjas_2 aptarnauja klientą Klientas_29, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_29:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -396,11 +657,20 @@ ANTRA DALIS. Vykdymas
 |        Pardavėjas_2 aptarnauja klientą Klientas_29, liko 2 minutės                               |
 |        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 30 minučių                                                                                    |
+|Būsena_29:                                                                                        |
+|    1) Klientų eilė:                                                                              |
+|        Klientas_30, laukia 0 min                                                                 |
+|    2) Pardavėjai:                                                                                |
+|        Pardavėjas_1 aptarnauja klientą Klientas_28, liko 1 minutė                                |
+|        Pardavėjas_2 aptarnauja klientą Klientas_29, liko 2 minutės                               |
+|        Pardavėjas_3 aptarnauja klientą Klientas_27, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_30:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_30                                                         |
-|    2) Pardavėjas_3 baigė aptarnauti Klientas_27                                                  |
-|    3) Pardavėjas_3 aptarnauja klientą Klientas_30, liko 3 minutės                                |
+|    1) Pardavėjas_3 baigė aptarnauti Klientas_27                                                  |
+|    2) Pardavėjas_3 aptarnauja klientą Klientas_30, liko 3 minutės                                |
+|                                                                                                  |
 |Būsena_30:                                                                                        |
 |    1) Klientų eilė: {}                                                                           |
 |    2) Pardavėjai:                                                                                |
@@ -424,10 +694,21 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 laisvas                                                                      |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 1 minutė                                                                                      |
+|Būsena_0:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_1, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 laisvas                                                                      |
+|        Pardavėjas_2 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|                                                                                                  |
 |Veiksmai_1:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_1                                                          |
-|    2) Pardavėjas_1 surašo prekes klientui Klientas_1, liko 1 minutė                              |
+|    1) Pardavėjas_1 surašo prekes klientui Klientas_1, liko 1 minutė                              |
+|                                                                                                  |
 |Būsena_1:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -437,12 +718,23 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 laisvas                                                                      |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 2 minutės                                                                                     |
+|Būsena_1:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_2, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_1, liko 0 minučių                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 laisvas                                                                      |
+|                                                                                                  |
 |Veiksmai_2:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_2                                                          |
-|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_1                                     |
-|    3) Pardavėjas_1 surašo prekes klientui Klientas_2, liko 1 minutė                              |
-|    4) Kasininkas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                  |
+|    1) Pardavėjas_1 baigė prekių surašymą klientui Klientas_1                                     |
+|    2) Pardavėjas_1 surašo prekes klientui Klientas_2, liko 1 minutė                              |
+|    3) Kasininkas_1 aptarnauja klientą Klientas_1, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_2:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -452,14 +744,25 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 3 minutės                                                                                     |
+|Būsena_2:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_3, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_2, liko 0 minučių                            |
+|        Pardavėjas_2 laisvas                                                                      |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_1, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_3:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_3                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_1                                                   |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_2                                     |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_1, liko 1 minutė                              |
-|    5) Pardavėjas_2 surašo prekes klientui Klientas_3, liko 1 minutė                              |
-|    6) Kasininkas_1 aptarnauja klientą Klientas_2, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_1                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_2                                     |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_1, liko 1 minutė                              |
+|    4) Pardavėjas_2 surašo prekes klientui Klientas_3, liko 1 minutė                              |
+|    5) Kasininkas_1 aptarnauja klientą Klientas_2, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_3:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -469,15 +772,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_2, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 4 minutės                                                                                     |
+|Būsena_3:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_4, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_1, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_3, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_2, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_4:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_4                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_2                                                   |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_1                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_2, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_3                                     |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_4, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_3, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_2                                                   |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_1                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_2, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_3                                     |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_4, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_3, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_4:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -487,15 +801,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_3, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 5 minutės                                                                                     |
+|Būsena_4:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_5, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_2, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_4, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_3, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_5:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_5                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_3                                                   |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_2                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_5, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_4                                     |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_3, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_4, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_3                                                   |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_2                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_5, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_4                                     |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_3, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_4, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_5:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -505,15 +830,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 6 minutės                                                                                     |
+|Būsena_5:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_6, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_5, liko 0 minučių                            |
+|        Pardavėjas_2 atneša prekes klientui Klientas_3, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_4, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_6:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_6                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_4                                                   |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_5                                     |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_6, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_3                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_4, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_5, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_4                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_5                                     |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_6, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_3                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_4, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_5, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_6:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -523,15 +859,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_5, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 7 minutės                                                                                     |
+|Būsena_6:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_7, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_6, liko 0 minučių                            |
+|        Pardavėjas_2 atneša prekes klientui Klientas_4, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_5, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_7:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_7                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_5                                                   |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_6                                     |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_5, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_4                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_7, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_6, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_5                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_6                                     |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_5, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_4                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_7, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_6, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_7:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -541,15 +888,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_6, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 8 minutės                                                                                     |
+|Būsena_7:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_8, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_5, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_7, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_6, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_8:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_8                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_6                                                   |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_5                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_6, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_7                                     |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_8, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_6                                                   |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_5                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_6, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_7                                     |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_8, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_7, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_8:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -559,15 +917,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 9 minutės                                                                                     |
+|Būsena_8:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_9, laukia 0 min                                                                  |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_6, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_8, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_7, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_9:                                                                                       |
-|    1) Atėjo naujas klientas: Klientas_9                                                          |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_7                                                   |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_6                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_9, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_8                                     |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_7, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_8, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_7                                                   |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_6                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_9, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_8                                     |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_7, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_8, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_9:                                                                                         |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -577,15 +946,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_8, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 10 minučių                                                                                    |
+|Būsena_9:                                                                                         |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_10, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_9, liko 0 minučių                            |
+|        Pardavėjas_2 atneša prekes klientui Klientas_7, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_8, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_10:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_10                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_8                                                   |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_9                                     |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_10, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_7                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_8, liko 1 minutė                              |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_9, liko 1 minutė                                  |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_8                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_9                                     |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_10, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_7                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_8, liko 1 minutė                              |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_9, liko 1 minutė                                  |
+|                                                                                                  |
 |Būsena_10:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -595,15 +975,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_9, liko 0 minučių                                |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 11 minučių                                                                                    |
+|Būsena_10:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_11, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_10, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_8, liko 0 minučių                            |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_9, liko 0 minučių                                |
+|                                                                                                  |
 |Veiksmai_11:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_11                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_9                                                   |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_10                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_9, liko 1 minutė                              |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_8                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_11, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_10, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_9                                                   |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_10                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_9, liko 1 minutė                              |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_8                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_11, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_10, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_11:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -613,15 +1004,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 12 minučių                                                                                    |
+|Būsena_11:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_12, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_9, liko 0 minučių                            |
+|        Pardavėjas_2 surašo prekes klientui Klientas_11, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_10, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_12:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_12                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_10                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_9                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_10, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_11                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_12, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_11, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_10                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_9                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_10, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_11                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_12, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_11, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_12:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -631,15 +1033,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_11, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 13 minučių                                                                                    |
+|Būsena_12:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_13, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_10, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_12, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_11, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_13:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_13                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_11                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_10                                   |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_13, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_12                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_11, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_12, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_11                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_10                                   |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_13, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_12                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_11, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_12, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_13:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -649,15 +1062,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_12, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 14 minučių                                                                                    |
+|Būsena_13:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_14, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_13, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_11, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_12, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_14:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_14                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_12                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_13                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_14, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_11                                   |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_12, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_13, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_12                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_13                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_14, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_11                                   |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_12, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_13, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_14:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -667,15 +1091,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_13, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 15 minučių                                                                                    |
+|Būsena_14:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_15, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_14, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_12, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_13, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_15:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_15                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_13                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_14                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_13, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_12                                   |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_15, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_14, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_13                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_14                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_13, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_12                                   |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_15, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_14, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_15:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -685,15 +1120,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_14, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 16 minučių                                                                                    |
+|Būsena_15:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_16, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_13, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_15, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_14, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_16:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_16                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_14                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_13                                   |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_14, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_15                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_16, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_15, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_14                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_13                                   |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_14, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_15                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_16, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_15, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_16:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -703,15 +1149,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_15, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 17 minučių                                                                                    |
+|Būsena_16:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_17, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_14, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_16, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_15, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_17:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_17                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_15                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_14                                   |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_17, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_16                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_15, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_16, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_15                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_14                                   |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_17, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_16                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_15, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_16, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_17:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -721,15 +1178,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_16, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 18 minučių                                                                                    |
+|Būsena_17:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_18, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_17, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_15, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_16, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_18:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_18                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_16                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_17                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_18, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_15                                   |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_16, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_17, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_16                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_17                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_18, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_15                                   |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_16, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_17, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_18:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -739,15 +1207,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_17, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 19 minučių                                                                                    |
+|Būsena_18:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_19, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_18, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_16, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_17, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_19:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_19                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_17                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_18                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_17, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_16                                   |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_19, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_18, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_17                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_18                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_17, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_16                                   |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_19, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_18, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_19:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -757,15 +1236,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_18, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 20 minučių                                                                                    |
+|Būsena_19:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_20, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_17, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_19, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_18, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_20:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_20                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_18                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_17                                   |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_18, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_19                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_20, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_19, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_18                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_17                                   |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_18, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_19                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_20, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_19, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_20:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -775,15 +1265,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_19, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 21 minutė                                                                                     |
+|Būsena_20:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_21, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_18, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_20, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_19, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_21:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_21                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_19                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_18                                   |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_21, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_20                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_19, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_20, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_19                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_18                                   |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_21, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_20                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_19, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_20, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_21:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -793,15 +1294,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_20, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 22 minutės                                                                                    |
+|Būsena_21:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_22, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_21, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_19, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_20, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_22:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_22                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_20                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_21                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_22, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_19                                   |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_20, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_21, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_20                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_21                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_22, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_19                                   |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_20, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_21, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_22:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -811,15 +1323,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_21, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 23 minutės                                                                                    |
+|Būsena_22:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_23, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_22, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_20, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_21, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_23:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_23                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_21                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_22                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_21, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_20                                   |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_23, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_22, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_21                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_22                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_21, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_20                                   |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_23, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_22, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_23:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -829,15 +1352,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_22, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 24 minutės                                                                                    |
+|Būsena_23:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_24, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_21, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_23, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_22, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_24:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_24                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_22                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_21                                   |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_22, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_23                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_24, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_23, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_22                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_21                                   |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_22, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_23                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_24, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_23, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_24:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -847,15 +1381,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_23, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 25 minutės                                                                                    |
+|Būsena_24:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_25, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_22, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_24, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_23, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_25:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_25                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_23                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_22                                   |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_25, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_24                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_23, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_24, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_23                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_22                                   |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_25, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_24                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_23, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_24, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_25:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -865,15 +1410,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_24, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 26 minutės                                                                                    |
+|Būsena_25:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_26, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_25, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_23, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_24, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_26:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_26                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_24                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_25                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_26, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_23                                   |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_24, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_25, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_24                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_25                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_26, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_23                                   |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_24, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_25, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_26:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -883,15 +1439,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_25, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 27 minutės                                                                                    |
+|Būsena_26:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_27, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_26, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_24, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_25, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_27:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_27                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_25                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_26                                    |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_25, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_24                                   |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_27, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_26, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_25                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_26                                    |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_25, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_24                                   |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_27, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_26, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_27:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -901,15 +1468,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_26, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 28 minutės                                                                                    |
+|Būsena_27:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_28, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_25, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_27, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_26, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_28:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_28                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_26                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_25                                   |
-|    4) Pardavėjas_1 atneša prekes klientui Klientas_26, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_27                                    |
-|    6) Pardavėjas_2 surašo prekes klientui Klientas_28, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_27, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_26                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_25                                   |
+|    3) Pardavėjas_1 atneša prekes klientui Klientas_26, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_27                                    |
+|    5) Pardavėjas_2 surašo prekes klientui Klientas_28, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_27, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_28:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -919,15 +1497,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_27, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 29 minutės                                                                                    |
+|Būsena_28:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_29, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 atneša prekes klientui Klientas_26, liko 0 minučių                           |
+|        Pardavėjas_2 surašo prekes klientui Klientas_28, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_27, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_29:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_29                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_27                                                  |
-|    3) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_26                                   |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_29, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surašymą klientui Klientas_28                                    |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_27, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_28, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_27                                                  |
+|    2) Pardavėjas_1 baigė prekių surinkimą klientui Klientas_26                                   |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_29, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surašymą klientui Klientas_28                                    |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_27, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_28, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_29:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |
@@ -937,15 +1526,26 @@ ANTRA DALIS. Vykdymas
 |    4) Kasininkai:                                                                                |
 |        Kasininkas_1 aptarnauja klientą Klientas_28, liko 0 minučių                               |
 |                                                                                                  |
+|--------------------------------------------------------------------------------------------------|
 |T = 30 minučių                                                                                    |
+|Būsena_29:                                                                                        |
+|    1) Klientų eilė pas pardavėjus:                                                               |
+|        Klientas_30, laukia 0 min                                                                 |
+|    2) Klientų eilė pas kasininkus: {}                                                            |
+|    3) Pardavėjai:                                                                                |
+|        Pardavėjas_1 surašo prekes klientui Klientas_29, liko 0 minučių                           |
+|        Pardavėjas_2 atneša prekes klientui Klientas_27, liko 0 minučių                           |
+|    4) Kasininkai:                                                                                |
+|        Kasininkas_1 aptarnauja klientą Klientas_28, liko 0 minučių                               |
+|                                                                                                  |
 |Veiksmai_30:                                                                                      |
-|    1) Atėjo naujas klientas: Klientas_30                                                         |
-|    2) Kasininkas_1 baigė aptarnauti Klientas_28                                                  |
-|    3) Pardavėjas_1 baigė prekių surašymą klientui Klientas_29                                    |
-|    4) Pardavėjas_1 surašo prekes klientui Klientas_30, liko 1 minutė                             |
-|    5) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_27                                   |
-|    6) Pardavėjas_2 atneša prekes klientui Klientas_28, liko 1 minutė                             |
-|    7) Kasininkas_1 aptarnauja klientą Klientas_29, liko 1 minutė                                 |
+|    1) Kasininkas_1 baigė aptarnauti Klientas_28                                                  |
+|    2) Pardavėjas_1 baigė prekių surašymą klientui Klientas_29                                    |
+|    3) Pardavėjas_1 surašo prekes klientui Klientas_30, liko 1 minutė                             |
+|    4) Pardavėjas_2 baigė prekių surinkimą klientui Klientas_27                                   |
+|    5) Pardavėjas_2 atneša prekes klientui Klientas_28, liko 1 minutė                             |
+|    6) Kasininkas_1 aptarnauja klientą Klientas_29, liko 1 minutė                                 |
+|                                                                                                  |
 |Būsena_30:                                                                                        |
 |    1) Klientų eilė pas pardavėjus: {}                                                            |
 |    2) Klientų eilė pas kasininkus: {}                                                            |

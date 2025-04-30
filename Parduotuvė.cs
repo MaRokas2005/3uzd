@@ -101,15 +101,21 @@ namespace _3uzd
             {
                 veiksmas = 0;
                 sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
+                sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{$"T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Veiksmai_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Būsena_{dabartinėMinutė-1}
+                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė-1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
                     KlientasP1 klientas = new();
                     klientai.Enqueue(klientas);
-                    sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
+                    //sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
                 }
+                sb.Append(GrąžintiKlientus(klientai, 1));
+                sb.Append(GrąžintiPardavėjus(pardavėjai, 2));
+                sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Veiksmai_{dabartinėMinutė}
+                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 foreach (var pardavėjas in pardavėjai)
                 {
                     if (pardavėjas.Klientas != null)
@@ -137,6 +143,7 @@ namespace _3uzd
                 }
                 ilgiausiaEilėP1 = Math.Max(ilgiausiaEilėP1, klientai.Count);
                 Laukti(klientai);
+                sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė}
                 sb.AppendLine($"|{$"Būsena_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientai, 1));
@@ -180,15 +187,23 @@ namespace _3uzd
                 eilėjeKlientų = 0;
                 veiksmas = 0;
                 sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
+                sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{$"T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Veiksmai_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Būsena_{dabartinėMinutė-1}
+                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė - 1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
                     KlientasP2 klientas = new();
                     klientųEilėPasPardavėjus.Enqueue(klientas);
-                    sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
+                    //sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
                 }
+                sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1, "Klientų eilė pas pardavėjus"));
+                sb.Append(GrąžintiKlientus(klientųEilėPasKasininkus, 2, "Klientų eilė pas kasininkus"));
+                sb.Append(GrąžintiPardavėjus(pardavėjai, 3));
+                sb.Append(GrąžintiKasininkus(kasininkai, 4));
+                sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Veiksmai_{dabartinėMinutė}
+                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
 
                 foreach (var kasininkas in kasininkai)
                 {
@@ -264,6 +279,7 @@ namespace _3uzd
                 ilgiausiaEilėP2 = Math.Max(ilgiausiaEilėP2, eilėjeKlientų);
                 Laukti(klientųEilėPasPardavėjus);
                 Laukti(klientųEilėPasKasininkus);
+                sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė}
                 sb.AppendLine($"|{$"Būsena_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1, "Klientų eilė pas pardavėjus"));

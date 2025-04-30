@@ -15,7 +15,6 @@
             {
                 Console.Write("Įveskite simuliavimo trukmę, minutėmis (> 0): ");
             } while (!int.TryParse(Console.ReadLine(), out simuliavimoTrukmė) || !(simuliavimoTrukmė > 0));
-            Console.WriteLine(simuliavimoTrukmė);
             do
             {
                 Console.Write("Įveskitę tikimybę ateiti klientui (0-100%): ");
