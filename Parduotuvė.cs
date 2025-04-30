@@ -86,25 +86,25 @@ namespace _3uzd
 
             sb.AppendLine($"{new string('=', Protokolas.EILUTĖS_ILGIS)}");
             sb.AppendLine($"|{"Procesas 1",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{new string('=', Protokolas.EILUTĖS_ILGIS - 2)}|");
-            sb.AppendLine($"|{$"T ={" 0 minučių"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"Būsena_0:",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"    1) Klientų eilė: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"    2) Pardavėjai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{new string('=', Protokolas.EILUTĖS_ILGIS - 2)}|");
+            //sb.AppendLine($"|{$"T ={" 0 minučių"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"Būsena_0:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    1) Klientų eilė: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    2) Pardavėjai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < pardavėjaiP1; i++)
             {
                 pardavėjai.Add(new PardavėjasP1(pilnaiAptarnautiP1));
-                sb.AppendLine($"|{$"        {pardavėjai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //sb.AppendLine($"|{$"        {pardavėjai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
 
-            while (++dabartinėMinutė <= simuliavimoTrukmė)
+            while (dabartinėMinutė < simuliavimoTrukmė)
             {
                 veiksmas = 0;
-                sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
+                //sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
-                sb.AppendLine($"|{$"T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė-1}
-                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė-1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė+1}-osios minutės pradžioje",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
                     KlientasP1 klientas = new();
@@ -115,7 +115,7 @@ namespace _3uzd
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 2));
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Veiksmai_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"VEIKSMAI_{dabartinėMinutė+1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 foreach (var pardavėjas in pardavėjai)
                 {
                     if (pardavėjas.Klientas != null)
@@ -144,10 +144,11 @@ namespace _3uzd
                 ilgiausiaEilėP1 = Math.Max(ilgiausiaEilėP1, klientai.Count);
                 Laukti(klientai);
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Būsena_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Būsena_{dabartinėMinutė+1}
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės pabaigoje",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientai, 1));
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 2));
+                dabartinėMinutė++;
             }
             sb.AppendLine($"{new string('=', Protokolas.EILUTĖS_ILGIS)}\n\n\n");
             return sb.ToString();
@@ -164,33 +165,33 @@ namespace _3uzd
             Queue<KlientasP2> klientųEilėPasKasininkus = new();
             sb.AppendLine($"{new string('=', Protokolas.EILUTĖS_ILGIS)}");
             sb.AppendLine($"|{"Procesas 2",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{new string('=', Protokolas.EILUTĖS_ILGIS - 2)}|");
-            sb.AppendLine($"|{$"T ={" 0 minučių"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"Būsena_0:",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"    1) Klientų eilė pas pardavėjus: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"    2) Klientų eilė pas kasininkus: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{"    3) Pardavėjai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{new string('=', Protokolas.EILUTĖS_ILGIS - 2)}|");
+            //sb.AppendLine($"|{$"T ={" 0 minučių"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"Būsena_0:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    1) Klientų eilė pas pardavėjus: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    2) Klientų eilė pas kasininkus: {}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    3) Pardavėjai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < pardavėjaiP2; i++)
             {
                 pardavėjai.Add(new PardavėjasP2(surašytiPrekesP2, gautiPrekesP2));
-                sb.AppendLine($"|{$"        {pardavėjai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //sb.AppendLine($"|{$"        {pardavėjai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
-            sb.AppendLine($"|{"    4) Kasininkai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            //sb.AppendLine($"|{"    4) Kasininkai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < kasininkaiP2; i++)
             {
                 kasininkai.Add(new KasininkasP2(sumokėtiKasininkuiP2));
-                sb.AppendLine($"|{$"        {kasininkai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //sb.AppendLine($"|{$"        {kasininkai[i]}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
 
-            while (++dabartinėMinutė <= simuliavimoTrukmė)
+            while (dabartinėMinutė < simuliavimoTrukmė)
             {
                 eilėjeKlientų = 0;
                 veiksmas = 0;
-                sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
+                //sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
-                sb.AppendLine($"|{$"T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Būsena_{dabartinėMinutė-1}
-                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė - 1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Būsena_{dabartinėMinutė}
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė + 1}-osios minutės pradžioje",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
                     KlientasP2 klientas = new();
@@ -202,8 +203,8 @@ namespace _3uzd
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 3));
                 sb.Append(GrąžintiKasininkus(kasininkai, 4));
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Veiksmai_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Veiksmai_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Veiksmai_{dabartinėMinutė+1}
+                sb.AppendLine($"|{$"VEIKSMAI_{dabartinėMinutė+1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
 
                 foreach (var kasininkas in kasininkai)
                 {
@@ -280,12 +281,13 @@ namespace _3uzd
                 Laukti(klientųEilėPasPardavėjus);
                 Laukti(klientųEilėPasKasininkus);
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
-                //Būsena_{dabartinėMinutė}
-                sb.AppendLine($"|{$"Būsena_{dabartinėMinutė}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                //Būsena_{dabartinėMinutė+1}
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės pabaigoje",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1, "Klientų eilė pas pardavėjus"));
                 sb.Append(GrąžintiKlientus(klientųEilėPasKasininkus, 2, "Klientų eilė pas kasininkus"));
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 3));
                 sb.Append(GrąžintiKasininkus(kasininkai, 4));
+                dabartinėMinutė++;
             }
 
             sb.AppendLine($"{new string('=', Protokolas.EILUTĖS_ILGIS)}\n\n\n");
