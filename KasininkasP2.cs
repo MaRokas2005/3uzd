@@ -6,7 +6,7 @@
         public string Id { get; init; } = $"Kasininkas Ka{++skaitiklis}";
         public KlientasP2? Klientas { get; private set; } = null;
         public int AptarnavimoLaikas { get; set; }
-        public override string ToString() => $"{Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)}")}";
+        public override string ToString() => $"{Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)} iš {aptarnavimoTrukmė} {(aptarnavimoTrukmė == 1 ? "minutės" : "minučių")}")}";
         public void PradėtiAptarnavimą(KlientasP2 klientas)
         {
             Klientas = klientas;

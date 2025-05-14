@@ -18,9 +18,9 @@ namespace _3uzd
                 return $"|{$"        {Id} laisvas",-Protokolas.EILUTĖS_ILGIS + 2}|\n";
             var sb = new StringBuilder();
             if (!Klientas.ArSusimokėjoUžPrekes)
-                sb.AppendLine($"|{$"        {Id} surašo prekes klientui {Klientas.Id}, liko {SurašytiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(SurašytiPrekes - AptarnavimoLaikas)}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"        {Id} surašo prekes klientui {Klientas.Id}, liko {SurašytiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(SurašytiPrekes - AptarnavimoLaikas)} iš {SurašytiPrekes} {(SurašytiPrekes == 1 ? "minutės" : "minučių")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             else
-                sb.AppendLine($"|{$"        {Id} atneša prekes klientui {Klientas.Id}, liko {GautiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(GautiPrekes - AptarnavimoLaikas)}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"        {Id} atneša prekes klientui {Klientas.Id}, liko {GautiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(GautiPrekes - AptarnavimoLaikas)} iš {GautiPrekes} {(GautiPrekes == 1 ? "minutės" : "minučių")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"           Klientų, eilėje pas pardavėją, yra {PoKasininko.Count}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             if (PoKasininko.Count == 0)
             {
@@ -52,8 +52,8 @@ namespace _3uzd
             if (Klientas == null)
                 return $"{Id} laisvas";
             if (!Klientas.ArSusimokėjoUžPrekes)
-                return $"{Id} surašo prekes klientui {Klientas.Id}, liko {SurašytiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(SurašytiPrekes - AptarnavimoLaikas)}";
-            return $"{Id} atneša prekes klientui {Klientas.Id}, liko {GautiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(GautiPrekes - AptarnavimoLaikas)}";
+                return $"{Id} surašo prekes klientui {Klientas.Id}, liko {SurašytiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(SurašytiPrekes - AptarnavimoLaikas)} iš {SurašytiPrekes} {(SurašytiPrekes == 1 ? "minutės" : "minučių")}";
+            return $"{Id} atneša prekes klientui {Klientas.Id}, liko {GautiPrekes - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(GautiPrekes - AptarnavimoLaikas)} iš {GautiPrekes} {(GautiPrekes == 1 ? "minutės" : "minučių")}";
         }
         public void PradėtiPrekiųSurašymą(ref KlientasP2 klientas)
         {
