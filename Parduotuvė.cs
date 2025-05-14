@@ -13,6 +13,8 @@ namespace _3uzd
         private int surašytiPrekesP2;
         private int sumokėtiKasininkuiP2;
         private int gautiPrekesP2;
+        private int atėjoKlientųP1 = 0;
+        private int atėjoKlientųP2 = 0;
         private int aptarnautaKlientųP1 = 0;
         private int aptarnautaKlientųP2 = 0;
         private int ilgiausiaEilėP1 = 0;
@@ -102,17 +104,19 @@ namespace _3uzd
                 veiksmas = 0;
                 //sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
-                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė:d2} min. 00 sek."}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė-1}
-                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė+1}-osios minutės pradžioje",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė+1}-osios minutės PRADŽIOJE",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                KlientasP1 atėjęsKlientas = null!;
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
-                    KlientasP1 klientas = new();
-                    klientai.Enqueue(klientas);
-                    //sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
+                    atėjoKlientųP1++;
+                    atėjęsKlientas = new();
+                    sb.AppendLine($"|{$"    1) Klientas {atėjęsKlientas.Id} prie durų.",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 }
-                sb.Append(GrąžintiKlientus(klientai, 1));
-                sb.Append(GrąžintiPardavėjus(pardavėjai, 2));
+                sb.Append(GrąžintiKlientus(klientai, 1 + (atėjęsKlientas == null ? 0 : 1), "Eilėje iš anksčiau klientų"));
+                sb.Append(GrąžintiPardavėjus(pardavėjai, 2 + (atėjęsKlientas == null ? 0 : 1)));
+                if (atėjęsKlientas != null) klientai.Enqueue(atėjęsKlientas);
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Veiksmai_{dabartinėMinutė}
                 sb.AppendLine($"|{$"VEIKSMAI_{dabartinėMinutė+1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
@@ -133,19 +137,19 @@ namespace _3uzd
                     {
                         KlientasP1 klientas = klientai.Dequeue();
                         pardavėjas.PradėtiAptarnavimą(klientas);
-                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas.Tag()}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                         pardavėjas.AptarnavimoLaikas++;
                     }
                     if (pardavėjas.Klientas != null)
                     {
-                        kasųUžimtumasP1[pardavėjas.Id[^1] - '1']++;
+                        kasųUžimtumasP1[int.Parse(pardavėjas.Id.Split('_')[1]) - 1]++;
                     }
                 }
                 ilgiausiaEilėP1 = Math.Max(ilgiausiaEilėP1, klientai.Count);
                 Laukti(klientai);
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė+1}
-                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės pabaigoje",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės PABAIGOJE",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientai, 1));
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 2));
                 dabartinėMinutė++;
@@ -189,20 +193,22 @@ namespace _3uzd
                 veiksmas = 0;
                 //sb.AppendLine($"|{new string(' ', Protokolas.EILUTĖS_ILGIS - 2)}|");
                 sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
-                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė} {GaukMinučiųŽymę(dabartinėMinutė)}"}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"MOMENTAS T ={$" {dabartinėMinutė:d2} min. 00 sek."}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė}
-                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė + 1}-osios minutės pradžioje",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė} {dabartinėMinutė + 1}-osios minutės PRADŽIOJE",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                KlientasP2 atėjęsKlientas = null!;
                 if (new Random().Next(0, 100) < tikimybėAteitiKlientui)
                 {
-                    KlientasP2 klientas = new();
-                    klientųEilėPasPardavėjus.Enqueue(klientas);
-                    //sb.AppendLine($"|{$"    {++veiksmas}) Atėjo naujas klientas: " + klientas.Id,-Protokolas.EILUTĖS_ILGIS + 2}|");
+                    atėjoKlientųP2++;
+                    atėjęsKlientas = new();
+                    sb.AppendLine($"|{$"    1) Klientas {atėjęsKlientas.Id} prie durų.",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 }
-                sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1, "Klientų eilė pas pardavėjus"));
-                sb.Append(GrąžintiKlientus(klientųEilėPasKasininkus, 2, "Klientų eilė pas kasininkus"));
-                sb.Append(GrąžintiPardavėjus(pardavėjai, 3));
-                sb.Append(GrąžintiKasininkus(kasininkai, 4));
+                sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1 + (atėjęsKlientas == null ? 0 : 1), "Eilėje iš anksčiau pas pardavėjus"));
+                sb.Append(GrąžintiKlientus(klientųEilėPasKasininkus, 2 + (atėjęsKlientas == null ? 0 : 1), "Eilėje iš anksčiau pas kasininkus"));
+                sb.Append(GrąžintiPardavėjus(pardavėjai, 3 + (atėjęsKlientas == null ? 0 : 1)));
+                sb.Append(GrąžintiKasininkus(kasininkai, 4 + (atėjęsKlientas == null ? 0 : 1)));
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                if (atėjęsKlientas != null) klientųEilėPasPardavėjus.Enqueue(atėjęsKlientas);
                 //Veiksmai_{dabartinėMinutė+1}
                 sb.AppendLine($"|{$"VEIKSMAI_{dabartinėMinutė+1}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
 
@@ -249,18 +255,18 @@ namespace _3uzd
                     {
                         KlientasP2 klientas = pardavėjas.PoKasininko.Dequeue();
                         pardavėjas.PradėtiPrekiųSurinkimą(ref klientas);
-                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas.Tag()}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                         arUžimtas = 1;
                     }
                     if (pardavėjas.Klientas == null && klientųEilėPasPardavėjus.Count > 0)
                     {
                         KlientasP2 klientas = klientųEilėPasPardavėjus.Dequeue();
                         pardavėjas.PradėtiPrekiųSurašymą(ref klientas);
-                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                        sb.AppendLine($"|{$"    {++veiksmas}) {pardavėjas.Tag()}",-Protokolas.EILUTĖS_ILGIS + 2}|");
                         arUžimtas = 1;
                     }
                     pardavėjas.AptarnavimoLaikas += arUžimtas;
-                    pardavėjųUžimtumasP2[pardavėjas.Id[^1] - '1'] += arUžimtas;
+                    pardavėjųUžimtumasP2[int.Parse(pardavėjas.Id.Split('_')[1]) - 1] += arUžimtas;
                 }
                 foreach (var kasininkas in kasininkai)
                 {
@@ -282,7 +288,7 @@ namespace _3uzd
                 Laukti(klientųEilėPasKasininkus);
                 sb.AppendLine($"|{"",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 //Būsena_{dabartinėMinutė+1}
-                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės pabaigoje",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"BŪSENA_{dabartinėMinutė + 1} {dabartinėMinutė + 1}-osios minutės PABAIGOJE",-Protokolas.EILUTĖS_ILGIS + 2}|");
                 sb.Append(GrąžintiKlientus(klientųEilėPasPardavėjus, 1, "Klientų eilė pas pardavėjus"));
                 sb.Append(GrąžintiKlientus(klientųEilėPasKasininkus, 2, "Klientų eilė pas kasininkus"));
                 sb.Append(GrąžintiPardavėjus(pardavėjai, 3));
@@ -302,11 +308,20 @@ namespace _3uzd
             sb.AppendLine($"|{new string('=', Protokolas.EILUTĖS_ILGIS - 2)}|");
             sb.AppendLine($"|{$"Procesas1:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Daugiausia kiek buvo žmonių eilėje yra {ilgiausiaEilėP1}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            sb.AppendLine($"|{$"Atėjo klientų: {atėjoKlientųP1}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"{(aptarnautaKlientųP1 == 1 ? "Aptarnautas" : "Aptarnauti")} {aptarnautaKlientųP1} {GaukKlientoŽymę(aptarnautaKlientųP1)}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Minimalus aptarnavimo laikas: {(minučiųPilnasAptarnavimasP1.Count != 0 ? minučiųPilnasAptarnavimasP1.Min() : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP1.Count != 0 ? GaukMinučiųŽymę(minučiųPilnasAptarnavimasP1.Min()) : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Vidutinis aptarnavimo laikas: {(minučiųPilnasAptarnavimasP1.Count != 0 ? $"{minučiųPilnasAptarnavimasP1.Average():f2}" : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP1.Count != 0 ? "minučių" : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Ilgiausias aptarnavimo laikas: {(minučiųPilnasAptarnavimasP1.Count != 0 ? minučiųPilnasAptarnavimasP1.Max() : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP1.Count != 0 ? GaukMinučiųŽymę(minučiųPilnasAptarnavimasP1.Max()) : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{$"Būtų užtekę {kasųUžimtumasP1.Count(n => n > 0)} {(kasųUžimtumasP1.Count(n => n > 0) == 1 ? "pardavėjos" : "pardavėjų")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            if (kasųUžimtumasP1.Count(n => n > 0) == pardavėjaiP1) 
+            {
+                sb.AppendLine($"|{$"Reikėjo visų pardavėjų.",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            } 
+            else
+            {
+                sb.AppendLine($"|{$"Būtų užtekę {kasųUžimtumasP1.Count(n => n > 0)} {(kasųUžimtumasP1.Count(n => n > 0) == 1 ? "pardavėjos" : "pardavėjų")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+
+            }
             sb.AppendLine($"|{$"Pardavėjų vidutinis užimtumas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < kasųUžimtumasP1.Count; i++)
             {
@@ -315,11 +330,31 @@ namespace _3uzd
             sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS-2)}|");
             sb.AppendLine($"|{$"Procesas2:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Daugiausia kiek buvo žmonių eilėje yra {ilgiausiaEilėP2}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{$"{(aptarnautaKlientųP1 == 1 ? "Aptarnautas" : "Aptarnauti")} {aptarnautaKlientųP2} {GaukKlientoŽymę(aptarnautaKlientųP2)}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            sb.AppendLine($"|{$"Atėjo klientų: {atėjoKlientųP2}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            sb.AppendLine($"|{$"{(aptarnautaKlientųP2 == 1 ? "Aptarnautas" : "Aptarnauti")} {aptarnautaKlientųP2} {GaukKlientoŽymę(aptarnautaKlientųP2)}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Minimalus aptarnavimo laikas: {(minučiųPilnasAptarnavimasP2.Count != 0 ? minučiųPilnasAptarnavimasP2.Min() : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP2.Count != 0 ? GaukMinučiųŽymę(minučiųPilnasAptarnavimasP2.Min()) : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Vidutinis aptarnavimo laikas: {(minučiųPilnasAptarnavimasP2.Count != 0 ? $"{minučiųPilnasAptarnavimasP2.Average():f2}" : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP2.Count != 0 ? "minučių" : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             sb.AppendLine($"|{$"Ilgiausias aptarnavimo laikas: {(minučiųPilnasAptarnavimasP2.Count != 0 ? minučiųPilnasAptarnavimasP2.Max() : "niekas neaptarnautas iki galo")} {(minučiųPilnasAptarnavimasP2.Count != 0 ? GaukMinučiųŽymę(minučiųPilnasAptarnavimasP2.Max()) : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            sb.AppendLine($"|{$"Būtų užtekę {pardavėjųUžimtumasP2.Count(n => n > 0)} {(pardavėjųUžimtumasP2.Count(n => n > 0) == 1 ? "pardavėjos" : "pardavėjų")} ir {kasųUžimtumasP2.Count(n => n > 0)} {(kasųUžimtumasP2.Count(n => n > 0) == 1 ? "kasos" : "kasų")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            {
+                var sbLine = new StringBuilder();
+                if (pardavėjųUžimtumasP2.Count(n => n > 0) == pardavėjaiP2)
+                {
+                    sbLine.Append("Reikėjo visų pardavėjų ir ");
+                }
+                else
+                {
+                    sbLine.Append($"Būtų užtekę {pardavėjųUžimtumasP2.Count(n => n > 0)} {(pardavėjųUžimtumasP2.Count(n => n > 0) == 1 ? "pardavėjos" : "pardavėjų")} ir ");
+                }
+                if (kasųUžimtumasP2.Count(n => n > 0) == kasininkaiP2)
+                {
+                    sbLine.Append("visų kasininkų.");
+                }
+                else
+                {
+                    sbLine.Append($"{kasųUžimtumasP2.Count(n => n > 0)} {(kasųUžimtumasP2.Count(n => n > 0) == 1 ? "kasininko" : "kasininkų")}.");
+                }
+                sb.AppendLine($"|{$"{sbLine}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            }
             sb.AppendLine($"|{$"Pardavėjų vidutinis užimtumas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < pardavėjųUžimtumasP2.Count; i++)
             {
@@ -339,7 +374,7 @@ namespace _3uzd
             {
                 sb.AppendLine($"|{$"    Daugiau klientų aptarnauta {(aptarnautaKlientųP1 > aptarnautaKlientųP2 ? "pirmame" : "antrame")} procese.",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
-            if (kasųUžimtumasP1.Count(n => n > 0) == pardavėjųUžimtumasP2.Count(n => n > 0) + kasųUžimtumasP2.Count(n => n > 0))
+            if (kasųUžimtumasP1.Count(n => n > 0) == kasųUžimtumasP2.Count(n => n > 0))
             {
                 sb.AppendLine($"|{$"    Abiejuose procesuose vienodai reikėjo kasų aparatų.",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
@@ -374,8 +409,30 @@ namespace _3uzd
         public static string GrąžintiKlientus<T>(Queue<T> klientai, int numer, string pavadinimas = "Klientų eilė") where T : IKlientas
         {
             var sb = new StringBuilder();
-            sb.AppendLine($"|{$"    {numer}) {pavadinimas}: {(klientai.Count == 0 ? "{}" : "")}",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            foreach (var klientas in klientai) sb.AppendLine($"|{$"        {klientas}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            sb.AppendLine($"|{$"    {numer}) {pavadinimas} {klientai.Count}:",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            if (klientai.Count == 0)
+            {
+                sb.AppendLine($"|{$"       {{}}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                return sb.ToString();
+            }
+            sb.AppendLine($"|{$"       {{",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            int i = 0;
+            var sbLine = new StringBuilder();
+            foreach (var klientas in klientai)
+            {
+                ++i;
+                sbLine.Append($"{klientas.Id}{(i == klientai.Count ? "" : ", ")}");
+                if (sbLine.Length >= Protokolas.EILUTĖS_ILGIS - 25) 
+                {
+                    sb.AppendLine($"|{$"           {sbLine}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                    sbLine.Clear();
+                }
+            }
+            if (sbLine.Length > 0)
+            {
+                sb.AppendLine($"|{$"           {sbLine}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            }
+            sb.AppendLine($"|{$"       }}",-Protokolas.EILUTĖS_ILGIS + 2}|");
             return sb.ToString();
 
         }
@@ -383,7 +440,7 @@ namespace _3uzd
         {
             var sb = new StringBuilder();
             sb.AppendLine($"|{$"    {numer}) Pardavėjai:",-Protokolas.EILUTĖS_ILGIS + 2}|");
-            foreach (var pardavėjas in pardavėjai) sb.AppendLine($"|{$"        {pardavėjas}",-Protokolas.EILUTĖS_ILGIS + 2}|");
+            foreach (var pardavėjas in pardavėjai) sb.Append(pardavėjas);
             return sb.ToString();
         }
         public static string GrąžintiKasininkus(List<KasininkasP2> kasininkai, int numer)

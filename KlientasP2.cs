@@ -9,7 +9,7 @@
         public PardavėjasP2? Pardavėjas { get; set; } = null;
         public KlientasP2()
         {
-            Id = $"Klientas_{++skaitiklis}";
+            Id = $"K{++skaitiklis}";
         }
         public override string ToString() => $"{Id}, laukia {LaukimoLaikas} min";
         public static void NunulintiSkaitliuką() => skaitiklis = 0;

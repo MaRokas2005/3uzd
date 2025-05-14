@@ -6,8 +6,8 @@
         public string Id { get; init; } = $"Pardavėjas_{++skaitiklis}";
         public KlientasP1? Klientas { get; private set; } = null;
         public int AptarnavimoLaikas { get; set; }
-
-        public override string ToString() => $"{Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)}")}";
+        public override string ToString() => $"|{$"        {Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)}")}",-Protokolas.EILUTĖS_ILGIS + 2}|\n";
+        public string Tag() => $"{Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)}")}";
         public void PradėtiAptarnavimą(KlientasP1 klientas)
         {
             Klientas = klientas;

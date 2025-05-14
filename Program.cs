@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            if(!Directory.Exists("./../../../Protokolai"))
-            {
-                Directory.CreateDirectory("./../../../Protokolai");
-            }
             int N;
+            if(!Directory.Exists("./Protokolai"))
+            {
+                Directory.CreateDirectory("./Protokolai");
+            }
             do
             {
                 Console.Write("Įveskite testų skaičių: ");

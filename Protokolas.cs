@@ -26,7 +26,7 @@ namespace _3uzd
             $"{new string('=', EILUTĖS_ILGIS)                                                                              }\n\n\n";
         public Protokolas(int numeris)
         {
-            string name = $"./../../../Protokolai/3uzd-07var-protokolas{numeris}-Braidokas.txt";
+            string name = $"./Protokolai/3uzd-07var-protokolas{numeris}-Braidokas.txt";
             if (File.Exists(name))
                 File.Delete(name);
             writer = new StreamWriter(name, true, Encoding.UTF8, 4096);
