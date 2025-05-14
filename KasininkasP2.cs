@@ -3,7 +3,7 @@
     public class KasininkasP2(int aptarnavimoTrukmė)
     {
         private static int skaitiklis = 0;
-        public string Id { get; init; } = $"Kasininkas_{++skaitiklis}";
+        public string Id { get; init; } = $"Kasininkas Ka{++skaitiklis}";
         public KlientasP2? Klientas { get; private set; } = null;
         public int AptarnavimoLaikas { get; set; }
         public override string ToString() => $"{Id} {(Klientas == null ? "laisvas" : $"aptarnauja klientą {Klientas.Id}, liko {aptarnavimoTrukmė - AptarnavimoLaikas} {Parduotuvė.GaukMinučiųŽymę(aptarnavimoTrukmė - AptarnavimoLaikas)}")}";

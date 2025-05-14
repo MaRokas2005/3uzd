@@ -5,7 +5,7 @@ namespace _3uzd
     public class PardavėjasP2(int surašytiPrekes, int gautiPrekes) : IPardavėjas
     {
         private static int skaitiklis = 0;
-        public string Id { get; init; } = $"Pardavėjas_{++skaitiklis}";
+        public string Id { get; init; } = $"Pardavėjas P{++skaitiklis}";
         public KlientasP2? Klientas { get; private set; } = null;
         public Queue<KlientasP2> PoKasininko { get; init; } = new Queue<KlientasP2>();
         public int AptarnavimoLaikas { get; set; }

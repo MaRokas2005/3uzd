@@ -142,7 +142,7 @@ namespace _3uzd
                     }
                     if (pardavėjas.Klientas != null)
                     {
-                        kasųUžimtumasP1[int.Parse(pardavėjas.Id.Split('_')[1]) - 1]++;
+                        kasųUžimtumasP1[pardavėjas.Id[^1] - '1']++;
                     }
                 }
                 ilgiausiaEilėP1 = Math.Max(ilgiausiaEilėP1, klientai.Count);
@@ -266,7 +266,7 @@ namespace _3uzd
                         arUžimtas = 1;
                     }
                     pardavėjas.AptarnavimoLaikas += arUžimtas;
-                    pardavėjųUžimtumasP2[int.Parse(pardavėjas.Id.Split('_')[1]) - 1] += arUžimtas;
+                    pardavėjųUžimtumasP2[pardavėjas.Id[^1] - '1'] += arUžimtas;
                 }
                 foreach (var kasininkas in kasininkai)
                 {
@@ -326,7 +326,7 @@ namespace _3uzd
             sb.AppendLine($"|{$"Pardavėjų vidutinis užimtumas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < kasųUžimtumasP1.Count; i++)
             {
-                sb.AppendLine($"|{$"    Pardavėjas_{i + 1}: {kasųUžimtumasP1[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"    Pardavėjas P{i + 1}: {kasųUžimtumasP1[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
             sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS-2)}|");
             sb.AppendLine($"|{$"Procesas2:",-Protokolas.EILUTĖS_ILGIS + 2}|");
@@ -360,12 +360,12 @@ namespace _3uzd
             sb.AppendLine($"|{$"Pardavėjų vidutinis užimtumas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < pardavėjųUžimtumasP2.Count; i++)
             {
-                sb.AppendLine($"|{$"    Pardavėjas_{i + 1}: {pardavėjųUžimtumasP2[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"    Pardavėjas P{i + 1}: {pardavėjųUžimtumasP2[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
             sb.AppendLine($"|{$"Kasininkų vidutinis užimtumas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
             for (int i = 0; i < kasųUžimtumasP2.Count; i++)
             {
-                sb.AppendLine($"|{$"    Kasininkas_{i + 1}: {kasųUžimtumasP2[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
+                sb.AppendLine($"|{$"    Kasininkas Ka{i + 1}: {kasųUžimtumasP2[i] / (double)simuliavimoTrukmė * 100:f2}%",-Protokolas.EILUTĖS_ILGIS + 2}|");
             }
             sb.AppendLine($"|{new string('-', Protokolas.EILUTĖS_ILGIS - 2)}|");
             sb.AppendLine($"|{$"Apibendrinimas:",-Protokolas.EILUTĖS_ILGIS + 2}|");
