@@ -7,7 +7,7 @@
         public int LaukimoLaikas { get; set; } = 0;
         public KlientasP1()
         {
-            Id = $"K{++skaitiklis}";
+            Id = $"K{(++skaitiklis):d2}";
         }
         public override string ToString() => $"{Id}, laukia {LaukimoLaikas} min";
         public static void NunulintiSkaitliuką() => skaitiklis = 0;
